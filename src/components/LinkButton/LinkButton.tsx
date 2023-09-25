@@ -1,5 +1,5 @@
 import { LinkHTMLAttributes, ReactNode } from "react";
-import styles from "./linkButton.module.css";
+import styles from "./LinkButton.module.css";
 import Link from "next/link";
 
 type ButtonVariant = "main" | "secondary" | "primary";
