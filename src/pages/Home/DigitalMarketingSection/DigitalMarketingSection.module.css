@@ -43,8 +43,7 @@
 }
 
 .barHeading {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
+    font-size: var(--h3-headline-font);
+    font-weight:  var(--h3-headline-font-weight);
     color: var(--white);
 }

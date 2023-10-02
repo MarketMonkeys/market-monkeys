@@ -1,9 +1,39 @@
 :root {
-  --white: #FCFCFC;
-  --black: #0A0A0A;
-  --orange: #FF7830;
-  --blue: #2493FF;
-  --green: #34B366;
+  /* Colors */
+  --white: #fcfcfc;
+  --black: #0a0a0a;
+  --orange: #ff7830;
+  --blue: #1a89f5;
+  --green: #34b366;
+  --red: #f51818;
+
+  /* Text */
+  --h2-headline-font: 48px;
+  --h2-headline-font-weight: 900;
+
+  --h3-headline-font: 32px;
+  --h3-headline-font-weight: 700;
+
+  --h4-headline-font: 24px;
+  --h4-headline-font-weight: 700;
+
+  --h5-headline-font: 18px;
+  --h5-headline-font-weight: 700;
+
+  --text-main-font: 18px;
+  --text-main-font-weight: 400;
+
+  --text-secondary-font: 16px;
+  --text-secondary-font-weight: 400;
+
+  --text-description-font: 14px;
+  --text-description-font-weight: 300;
+
+  --text-button-main-font: 16px;
+  --text-button-main-font-weight: 900;
+
+  --text-button-secondary-font: 14px;
+  --text-button-secondary-font-weight: 700;
 }
 
 * {

@@ -1,3 +1,8 @@
+import AuditIcon from "@/components/Icons/AuditIcon";
+import BrandIcon from "@/components/Icons/BrandIcon";
+import SeoIcon from "@/components/Icons/SeoIcon";
+import WebIcon from "@/components/Icons/WebIcon";
+
 export const wordGroups = [
   {
     words: "posts#email-marketing#development#rebranding#content plan",
@@ -70,3 +75,37 @@ export const wordGroups = [
     ],
   },
 ];
+
+export const serviceSpectrum = [
+  {
+    icon: <SeoIcon />,
+    title: "SEO",
+    text: `Creating strategies, keyword writing, unique description, organic traffic, attracting customers to a specific product or service - it's all about SEO & Content.`,
+  },
+  {
+    icon: <WebIcon />,
+    title: "Website",
+    text: `Developing from A to Z your unique platform that matters to your clients!`,
+  },
+  {
+    icon: <BrandIcon />,
+    title: "Branding",
+    text: `We create a unique brand, thereby increasing your visibility and sales. The brand always works for you!`,
+  },
+  {
+    icon: <AuditIcon />,
+    title: "Audit",
+    text: `Integration of special tools to automate marketing processes such as mailings, customer experience management, etc. And you will also know all the mistakes on the site and not only!`,
+  },
+];
+
+type ServiceSpectrumImagesType = {
+  [key: string]: string;
+};
+
+export const serviceSpectrumImages: ServiceSpectrumImagesType = {
+  Audit: "/images/audit.svg",
+  SEO: "/images/seo.svg",
+  Branding: "/images/branding.svg",
+  Website: "/images/website.svg",
+};

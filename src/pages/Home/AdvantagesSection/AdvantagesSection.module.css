@@ -1,0 +1,25 @@
+.heading {
+  font-weight: var(--h2-headline-font-weight);
+  font-size: var(--h2-headline-font);
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.phoneImg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform:translateX(-50%);
+}
