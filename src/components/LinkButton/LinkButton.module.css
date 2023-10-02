@@ -15,16 +15,18 @@
 .mainButton {
     color: var(--white);
     background: var(--orange);
+    font-size: 16px;
+    font-weight: 900;
 }
 
 .small {
     padding: 11px 22px;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: var(--text-button-secondary-font);
+    font-weight: var(--text-button-secondary-font-weight);
 }
 
 .large {
     padding: 20px 40px;
-    font-size: 16px;
-    font-weight: 900;
+    font-size: var(--text-button-main-font);
+    font-weight: var(--text-button-main-font-weight);
 }

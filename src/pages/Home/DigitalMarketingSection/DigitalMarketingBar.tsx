@@ -12,7 +12,9 @@ const DigitalMarketingBar = () => {
           alt="test"
           width={700}
           height={420}
+          quality={100}
           draggable={false}
+          priority={true}
           className={styles.laptopImg}
         />
         <LinkButton href="/changeMe" size="l">

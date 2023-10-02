@@ -1,0 +1,21 @@
+
+
+.heading {
+  font-weight: var(--h2-headline-font-weight);
+  font-size: var(--h2-headline-font);
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 792px;
+}
+
+.serviceBlock {
+  display: flex;
+  justify-content: space-between;
+}
