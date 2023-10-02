@@ -36,11 +36,7 @@ const ServiceSpectrumSection = () => {
             height={384}
             style={{ marginRight: "24px" }}
           />
-          <LinkButton
-            href="/changeMe"
-            size="l"
-            style={{ marginBottom: "24px" }}
-          >
+          <LinkButton href="/" size="l" style={{ marginBottom: "24px" }}>
             VIEW ALL SERVICES
           </LinkButton>
         </div>

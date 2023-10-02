@@ -6,9 +6,9 @@ const DigitalMarketingBar = () => {
   return (
     <div className={styles.barContainer}>
       <div className={styles.barWrapper}>
-        <h3 className={styles.barHeading}>Digital Marketing</h3>
+        <p className={styles.barHeading}>Digital Marketing</p>
         <Image
-          src="/images/laptop-monkey.svg"
+          src="/images/laptop-monkey-fast.png"
           alt="test"
           width={700}
           height={420}
@@ -17,7 +17,7 @@ const DigitalMarketingBar = () => {
           priority={true}
           className={styles.laptopImg}
         />
-        <LinkButton href="/changeMe" size="l">
+        <LinkButton href="/" size="l">
           VIER OUR PROJECTS
         </LinkButton>
       </div>
