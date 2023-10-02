@@ -26,12 +26,12 @@ const Header = () => {
       <div style={{ display: "flex" }}>
         <LinkButton
           variant="secondary"
-          href="/changeMe"
+          href="/"
           style={{ marginRight: "20px" }}
         >
           En
         </LinkButton>
-        <LinkButton variant="primary" href="/changeMe">
+        <LinkButton variant="primary" href="/">
           Let&apos;s Talk
         </LinkButton>
       </div>
