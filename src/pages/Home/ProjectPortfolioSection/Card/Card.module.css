@@ -1,0 +1,116 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.cardWrapper {
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(252, 252, 252, 0.2);
+  height: 330px;
+  width: 588px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headingWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading {
+  color: var(--white);
+  font-size: var(--h4-headline-font);
+  font-weight: var(--h4-headline-font-weight);
+}
+
+.index {
+  color: var(--white);
+  font-size: var(--text-description-font);
+  font-weight: var(--text-description-font-weight);
+  opacity: 0.4;
+}
+
+.subtitle {
+  color: var(--white);
+  font-size: var(--h5-headline-font);
+  font-weight: var(--h5-headline-font-weight);
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: var(--text-secondary-font);
+  font-weight: var(--text-secondary-font-weight);
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.label {
+  font-size: var(--text-secondary-font);
+  font-weight: var(--text-secondary-font-weight);
+  color: var(--white);
+  opacity: 0.6;
+  display: block;
+  margin-top: 10px;
+}
+
+.imgWrapper {
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.image {
+  border-radius: 10px;
+  transition: transform 0.25s;
+}
+
+.wrapper:hover {
+  background: #252525;
+}
+
+.wrapper:hover .cardWrapper {
+  background: var(--white);
+  border: initial;
+}
+
+.wrapper:hover .index,
+.wrapper:hover .heading,
+.wrapper:hover .subtitle {
+  color: var(--black);
+}
+
+.wrapper:hover .imgWrapper {
+  background: var(--green);
+}
+
+.wrapper:hover .imgWrapper :global(.icon__fill path) {
+  fill: var(--white);
+}
+
+.wrapper:hover .text,
+.wrapper:hover .label {
+  color: var(--black);
+}
+
+.wrapper:hover a {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.wrapper:hover .image {
+  transform: scale(1.1);
+}

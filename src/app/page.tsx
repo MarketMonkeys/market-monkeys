@@ -1,5 +1,6 @@
 import AdvatagesSection from "@/pages/Home/AdvantagesSection/AdvantagesSection";
 import DigitalMarketingSection from "@/pages/Home/DigitalMarketingSection/DigitalMarketingSection";
+import ProjectPortfolioSection from "@/pages/Home/ProjectPortfolioSection/ProjectPortfolioSection";
 import ServiceSpectrumSection from "@/pages/Home/ServiceSpectrumSection/ServiceSpectrumSection";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
           <AdvatagesSection />
         </div>
       </div>
+      <ProjectPortfolioSection />
     </main>
   );
 }
