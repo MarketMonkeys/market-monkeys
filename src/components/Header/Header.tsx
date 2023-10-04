@@ -24,14 +24,10 @@ const Header = () => {
       <NavBar />
       <HeaderLogo />
       <div style={{ display: "flex" }}>
-        <LinkButton
-          variant="secondary"
-          href="/"
-          style={{ marginRight: "20px" }}
-        >
+        <LinkButton variant="primary" href="/" style={{ marginRight: "20px" }}>
           En
         </LinkButton>
-        <LinkButton variant="primary" href="/">
+        <LinkButton variant="secondary" href="/">
           Let&apos;s Talk
         </LinkButton>
       </div>

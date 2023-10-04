@@ -109,3 +109,33 @@ export const serviceSpectrumImages: ServiceSpectrumImagesType = {
   Branding: "/images/branding.svg",
   Website: "/images/website.svg",
 };
+
+export const projectPortfolioSection = [
+  {
+    title: "NFT Marketplace | Web3.0 Design",
+    subtitle: "Our Plan of Action",
+    text: "Web Design | Web Development | SEO Strategy",
+    label: "Content Marketing",
+    src: "/images/nft-marketplace.png",
+  },
+  {
+    title: "Fotballer | UI/UX",
+    subtitle: "Our Plan of Action",
+    text: "Content-Marketing | Email-Marketing",
+    label: "Prototyping",
+    src: "/images/footballer.png",
+  },
+  {
+    title: "Space Academy | Social Media",
+    subtitle: "Our Plan of Action",
+    text: "SMM | Key-Visual | Retarget | Facebook Ads",
+    src: "/images/space-academy.png",
+  },
+  {
+    title: "Trifecta | Document Assistant Website | UI/UX",
+    subtitle: "Our Plan of Action",
+    text: "SEO Strategy | PPC | Email-Marketing",
+    label: "Automation Tools",
+    src: "/images/trifecta.png",
+  },
+];

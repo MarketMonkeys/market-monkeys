@@ -8,7 +8,7 @@ const DigitalMarketingBar = () => {
       <div className={styles.barWrapper}>
         <p className={styles.barHeading}>Digital Marketing</p>
         <Image
-          src="/images/laptop-monkey-fast.png"
+          src="/images/laptop-monkey.png"
           alt="test"
           width={700}
           height={420}
