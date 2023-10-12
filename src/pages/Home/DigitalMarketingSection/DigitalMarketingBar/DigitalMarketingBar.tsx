@@ -1,5 +1,5 @@
 import LinkButton from "@/components/LinkButton/LinkButton";
-import styles from "./DigitalMarketingSection.module.css";
+import styles from "./DigitalMarketingBar.module.css";
 import Image from "next/image";
 
 const DigitalMarketingBar = () => {

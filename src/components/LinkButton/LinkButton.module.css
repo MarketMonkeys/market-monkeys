@@ -2,6 +2,7 @@
   border-radius: 100px;
   display: block;
   width: fit-content;
+  transition: all 0.5s;
 }
 
 .secondaryButton {
@@ -11,14 +12,14 @@
 
 .primaryButton {
   color: var(--white);
-  border: 1px solid rgba(252, 252, 252, 0.2);
+  background: var(--orange);
+  font-size: 16px;
+  font-weight: 900;
 }
 
 .mainButton {
   color: var(--white);
-  background: var(--orange);
-  font-size: 16px;
-  font-weight: 900;
+  border: 1px solid rgba(252, 252, 252, 0.2);
 }
 
 .small {
@@ -31,4 +32,16 @@
   padding: 20px 40px;
   font-size: var(--text-button-main-font);
   font-weight: var(--text-button-main-font-weight);
+}
+
+.secondaryButton:hover,
+.primaryButton:hover {
+  background: #ff955c !important;
+  color: var(--white) !important;
+}
+
+.secondaryButton:focus,
+.primaryButton:focus {
+  background: #ff6614 !important;
+  color: var(--white) !important;
 }

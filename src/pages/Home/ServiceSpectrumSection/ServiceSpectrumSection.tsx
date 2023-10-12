@@ -5,9 +5,11 @@ import Card from "./Card/Card";
 import Image from "next/image";
 import { useState } from "react";
 import LinkButton from "@/components/LinkButton/LinkButton";
+import { useDebounce } from "@/hooks/useDebounce";
 
 const ServiceSpectrumSection = () => {
   const [activeCard, setActiveCard] = useState(serviceSpectrum[0].title);
+  const debouncedValue = useDebounce<string>(activeCard, 250);
 
   const onMouseEnter = (title: string) => {
     setActiveCard(title);
@@ -30,7 +32,7 @@ const ServiceSpectrumSection = () => {
           }}
         >
           <Image
-            src={serviceSpectrumImages[activeCard]}
+            src={serviceSpectrumImages[debouncedValue]}
             alt="SEO image"
             width={384}
             height={384}
@@ -47,7 +49,7 @@ const ServiceSpectrumSection = () => {
               text={text}
               title={title}
               icon={icon}
-              isActive={activeCard === title}
+              isActive={debouncedValue === title}
               onMouseEnter={() => onMouseEnter(title)}
               onMouseLeave={onMouseLeave}
             />

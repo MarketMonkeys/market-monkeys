@@ -1,5 +1,5 @@
 import styles from "./DigitalMarketingSection.module.css";
-import DigitalMarketingBar from "./DigitalMarketingBar";
+import DigitalMarketingBar from "./DigitalMarketingBar/DigitalMarketingBar";
 import { wordGroups } from "@/common/mocks/home";
 
 const DigitalMarketingSection = () => {
