@@ -24,7 +24,7 @@ const Header = () => {
       <NavBar />
       <HeaderLogo />
       <div style={{ display: "flex" }}>
-        <LinkButton variant="primary" href="/" style={{ marginRight: "20px" }}>
+        <LinkButton variant="main" href="/" style={{ marginRight: "20px" }}>
           En
         </LinkButton>
         <LinkButton variant="secondary" href="/">

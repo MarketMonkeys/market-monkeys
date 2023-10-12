@@ -25,7 +25,7 @@ const BUTTON_SIZE: { [key in ButtonSize]: string } = {
 
 const LinkButton = ({
   children,
-  variant = "main",
+  variant = "primary",
   href,
   size = "s",
   ...props
