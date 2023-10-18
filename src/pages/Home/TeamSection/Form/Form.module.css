@@ -1,8 +1,42 @@
 .heading {
-    font-weight: var(--h2-headline-font-weight);
-    font-size: var(--h2-headline-font);
-    color: var(--black);
-    line-height: 60px;
-    text-transform: uppercase;
-    margin-bottom: 80px;
-  }
+  font-weight: var(--h2-headline-font-weight);
+  font-size: var(--h2-headline-font);
+  color: var(--black);
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.form > div {
+  max-width: 384px;
+  width: 100%;
+}
+
+.button {
+  border-radius: 100px;
+  background: var(--orange);
+  color: var(--white);
+  max-width: 384px;
+  width: 100%;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--text-button-main-font);
+  font-weight: var(--text-button-main-font-weight);
+}
+
+.description {
+  max-width: 384px;
+  width: 100%;
+  opacity: 0.4;
+  color: var(--black);
+  font-size: var( --text-description-font);
+  font-weight: var(--text-description-font-weight);
+  align-self: center;
+}

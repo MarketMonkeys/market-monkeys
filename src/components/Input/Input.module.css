@@ -1,13 +1,18 @@
 .input {
   border-radius: 100px;
   border: 1px solid rgba(10, 10, 10, 0.1);
-  padding: 20px 30px;
+  padding: 20px 55px 20px 30px;
   font-size: var(--text-secondary-font);
   font-weight: var(--text-secondary-font-weight);
   color: var(--black);
   transition: all 0.5s;
   width: 100%;
   background: transparent;
+  margin-bottom: 4px;
+}
+
+.input:disabled{
+  border: 1px solid rgba(10, 10, 10, 0.10);
 }
 
 .input::placeholder {
@@ -25,6 +30,7 @@
 
 .inputWrapper {
   position: relative;
+  width: 100%;
 }
 
 .icon {
@@ -32,15 +38,18 @@
   top: 50%;
   transform: translateY(-50%);
   right: 30px;
-  fill: rgba(10, 10, 10, 0.2);
   transition: fill 0.3s;
 }
 
-.inputWrapper:focus-within .icon {
+.icon, .icon path {
+  fill: rgba(10, 10, 10, 0.2);
+}
+
+.inputWrapper:focus-within .icon, .inputWrapper:focus-within .icon path {
   fill: #34b366;
 }
 
-.iconError {
+.iconError, .iconError path {
   fill: #f51818;
 }
 
@@ -49,4 +58,13 @@
 }
 
 .error {
+  display: flex;
+  align-items: center;
+}
+
+.error span{
+  color: var(--red);
+  font-size: var(--text-description-font);
+  font-weight: var(--text-description-font-weight);
+  margin-left: 8px;
 }

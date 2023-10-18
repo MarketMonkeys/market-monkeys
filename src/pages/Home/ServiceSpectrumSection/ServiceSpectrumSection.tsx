@@ -23,25 +23,13 @@ const ServiceSpectrumSection = () => {
     <section style={{ marginBottom: "120px" }}>
       <h2 className={styles.heading}>Service Spectrum</h2>
       <div className={styles.serviceBlock}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <Image
-            src={serviceSpectrumImages[debouncedValue]}
-            alt="SEO image"
-            width={384}
-            height={384}
-            style={{ marginRight: "24px" }}
-          />
-          <LinkButton href="/" size="l" style={{ marginBottom: "24px" }}>
-            VIEW ALL SERVICES
-          </LinkButton>
-        </div>
+        <Image
+          src={serviceSpectrumImages[debouncedValue]}
+          alt="SEO image"
+          width={384}
+          height={792}
+          style={{ marginRight: "24px" }}
+        />
         <div className={styles.cards}>
           {serviceSpectrum.map(({ text, title, icon }) => (
             <Card
@@ -56,6 +44,9 @@ const ServiceSpectrumSection = () => {
           ))}
         </div>
       </div>
+      <LinkButton href="/" size="l" style={{ margin: "0 auto" }}>
+        VIEW ALL SERVICES
+      </LinkButton>
     </section>
   );
 };

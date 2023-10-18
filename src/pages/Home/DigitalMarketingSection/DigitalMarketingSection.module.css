@@ -14,3 +14,10 @@
 .word:hover {
     filter: brightness(100%);
 }
+
+.laptopImg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
