@@ -12,7 +12,7 @@ interface InputProps {
   placeholder?: string;
   errorMsg?: string;
   isDisabled?: boolean;
-  Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element | null;
+  Icon?: (props: SVGProps<SVGSVGElement>) => JSX.Element;
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
