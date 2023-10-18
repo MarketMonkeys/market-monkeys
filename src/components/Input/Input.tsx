@@ -1,7 +1,8 @@
 import { ChangeEvent, SVGProps, forwardRef, useId } from "react";
 import styles from "./Input.module.css";
+import IconError from "../Icons/IconError";
 
-type InputType = "text" | "email" | "password";
+type InputType = "text" | "email" | "password" | "tel";
 
 interface InputProps {
   type: InputType;
@@ -50,7 +51,11 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             />
           )}
         </div>
-        {errorMsg && <p className={styles.error}>{errorMsg}</p>}
+        {errorMsg && (
+          <p className={styles.error}>
+            <IconError /> <span>{errorMsg}</span>
+          </p>
+        )}
       </div>
     );
   }

@@ -1,11 +1,11 @@
 import styles from "./DigitalMarketingSection.module.css";
-import DigitalMarketingBar from "./DigitalMarketingBar/DigitalMarketingBar";
 import { wordGroups } from "@/common/mocks/home";
+import Image from "next/image";
 
 const DigitalMarketingSection = () => {
   return (
-    <section>
-      <ul style={{ padding: "20px 0" }}>
+    <section style={{ position: "relative" }}>
+      <ul style={{ padding: "20px 0 40px" }}>
         {wordGroups.map((group, groupIndex) => (
           <li key={groupIndex} style={{ textAlign: "center" }}>
             {group.words.split("#").map((word, wordIndex) => (
@@ -20,7 +20,16 @@ const DigitalMarketingSection = () => {
           </li>
         ))}
       </ul>
-      <DigitalMarketingBar />
+      <Image
+        src="/images/laptop-monkey.png"
+        alt="test"
+        width={700}
+        height={420}
+        quality={100}
+        draggable={false}
+        priority={true}
+        className={styles.laptopImg}
+      />
     </section>
   );
 };

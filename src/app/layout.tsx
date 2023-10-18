@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={mulish.className}>
+        <link rel="icon" href="images/logo.svg" sizes="any" />
         <Header />
         {children}
       </body>
