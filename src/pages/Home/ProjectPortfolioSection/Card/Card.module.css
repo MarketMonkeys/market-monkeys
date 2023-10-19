@@ -19,7 +19,7 @@ max-width: 250px;
 flex-direction: column;
 justify-content: space-between;
 align-items: flex-end;
-max-width: 94px;
+width: 210px;
 }
 
 .image {

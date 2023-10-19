@@ -1,23 +1,59 @@
 .word {
-    color: var(--white);
-    font-size: 40px;
-    font-weight: 1000;
-    line-height: 40px;
-    text-transform: uppercase;
-    filter: brightness(20%);
-    transition: all 1s ease-out;
-    margin-right: 10px;
-    white-space: nowrap;
-    user-select: none;
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 1000;
+  line-height: 40px;
+  text-transform: uppercase;
+  filter: brightness(20%);
+  transition: all 0.5s ease-out;
+  margin-right: 10px;
+  white-space: nowrap;
+  user-select: none;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 
-.word:hover {
-    filter: brightness(100%);
+.blue:hover,
+.white:hover,
+.orange:hover,
+.green:hover {
+  z-index: 3;
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+
+.white:hover {
+  text-shadow:
+    0 0 7px rgba(252, 252, 252, 0.2),
+    0 0 12px rgba(252, 252, 252, 0.2),
+    0 0 14px rgba(252, 252, 252, 0.2);
+}
+
+.blue:hover {
+  text-shadow:
+    0 0 7px rgba(26, 137, 245, 0.2),
+    0 0 12px rgba(26, 137, 245, 0.2),
+    0 0 14px rgba(26, 137, 245, 0.2);
+}
+
+.orange:hover {
+  text-shadow:
+    0 0 7px rgba(255, 120, 48, 0.2),
+    0 0 12px rgba(255, 120, 48, 0.2),
+    0 0 14px rgba(255, 120, 48, 0.2);
+}
+.green:hover {
+  text-shadow:
+    0 0 7px rgba(52, 179, 102, 0.2),
+    0 0 12px rgba(52, 179, 102, 0.2),
+    0 0 14px rgba(52, 179, 102, 0.2);
 }
 
 .laptopImg {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

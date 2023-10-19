@@ -49,7 +49,7 @@ const Form = () => {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <div style={{ padding: "0 0 120px 88px" }}>
+    <div style={{ padding: "0 0 110px 88px" }}>
       <h2 className={styles.heading}>get in touch</h2>
       <form
         ref={form}

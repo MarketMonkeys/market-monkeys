@@ -8,7 +8,9 @@ const NavBar = () => {
       <ul className={styles.navbarList}>
         {navigationLinks.map(({ title, link }) => (
           <li key={link}>
-            <Link href={link}>{title}</Link>
+            <Link className={styles.link} href={link}>
+              {title}
+            </Link>
           </li>
         ))}
       </ul>

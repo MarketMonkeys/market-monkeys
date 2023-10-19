@@ -1,0 +1,39 @@
+.footerLogo {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.footerLogo img {
+  margin: 0 4px;
+}
+
+.footer {
+  padding: 60px 0;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.email {
+  color: var(--white);
+  text-align: center;
+  font-size: 82px;
+  font-weight: 900;
+  line-height: 80px;
+  margin-bottom: 60px;
+}
+
+.info {
+  color: var(--white);
+  font-size: var(--text-description-font);
+  font-weight: var(--text-description-font-weight);
+  opacity: 0.4;
+}
+
+.socialTitle {
+  font-size: var(--h5-headline-font);
+  font-weight: var(--h5-headline-font-weight);
+  margin-bottom: 20px;
+}

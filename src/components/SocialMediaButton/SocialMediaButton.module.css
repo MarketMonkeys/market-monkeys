@@ -1,0 +1,18 @@
+.button {
+  width: 60px;
+  height: 60px;
+  border: 1px solid rgba(252, 252, 252, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background: #ff955c;
+}
+
+.button:focus {
+  background: #ff6614;
+}

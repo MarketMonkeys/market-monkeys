@@ -29,6 +29,15 @@
   align-items: center;
   font-size: var(--text-button-main-font);
   font-weight: var(--text-button-main-font-weight);
+  transition: all 0.5s;
+}
+
+.button:hover {
+  background: #ff955c;
+}
+
+.button:focus {
+  background: #ff6614;
 }
 
 .description {
