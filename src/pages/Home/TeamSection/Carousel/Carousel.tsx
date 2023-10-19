@@ -16,6 +16,7 @@ const settings: Settings = {
   slidesToShow: 2,
   slidesToScroll: 1,
   variableWidth: true,
+  autoplay: true,
   arrows: false,
 };
 

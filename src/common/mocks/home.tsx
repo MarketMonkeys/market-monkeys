@@ -5,38 +5,84 @@ import WebIcon from "@/components/Icons/WebIcon";
 
 export const wordGroups = [
   {
-    words: "posts#email-marketing#development#rebranding#content plan",
-    colors: ["white", "orange", "white", "blue", "white"],
-  },
-  {
-    words: "web#content writing#retarget#strategy#storytelling#mock ups",
-    colors: ["green", "white", "blue", "white", "orange", "white"],
-  },
-  {
-    words: "ppc#branding#front-end#creatives#prototyping#website#posts",
-    colors: ["blue", "white", "orange", "white", "green", "white", "blue"],
-  },
-  {
-    words: "ppc#content plan#Facebook ads#photo processing#Web development",
-    colors: ["white", "orange", "green", "white", "orange"],
-  },
-  {
-    words: "creatives#website audit#seo strategy#visual#icons#illustration",
-    colors: ["white", "orange", "green", "white", "orange"],
-  },
-  {
-    words: "audit#banners#analytics#automation tools#photo processing#web",
-    colors: ["white", "green", "white", "blue", "white", "orange"],
+    words:
+      "front-end#posts#email-marketing#development#rebranding#content plan#photo processing",
+    colors: ["blue", "white", "orange", "white", "blue", "white", "green"],
   },
   {
     words:
-      "brand identity#research#Instagram ads#mock ups#packing#posts#creatives",
-    colors: ["orange", "white", "green", "white", "orange", "white", "blue"],
-  },
-  {
-    words:
-      "business#content#posts#content-marketing#visual#audit#SEO#analytics",
+      "audit#banners#web#content writing#retarget#strategy#storytelling#mock ups#content plan",
     colors: [
+      "orange",
+      "white",
+      "green",
+      "white",
+      "blue",
+      "white",
+      "orange",
+      "white",
+      "green",
+    ],
+  },
+  {
+    words:
+      "brand identity#ppc#branding#front-end#creatives#prototyping#website#posts#prototyping",
+    colors: [
+      "white",
+      "blue",
+      "white",
+      "orange",
+      "white",
+      "green",
+      "white",
+      "blue",
+      "white",
+    ],
+  },
+  {
+    words:
+      "content#ppc#content plan#Facebook ads#photo processing#Web development#seo",
+    colors: ["blue", "white", "orange", "green", "white", "orange", "white"],
+  },
+  {
+    words:
+      "development#creatives#website audit#seo strategy#visual#icons#illustration#research",
+    colors: ["green", "white", "orange", "green", "white", "orange", "white"],
+  },
+  {
+    words:
+      "strategy#audit#banners#analytics#automation tools#photo processing#web#Facebook ads",
+    colors: [
+      "blue",
+      "white",
+      "green",
+      "white",
+      "blue",
+      "white",
+      "orange",
+      "white",
+    ],
+  },
+  {
+    words:
+      "analytics#brand identity#research#Instagram ads#mock ups#packing#posts#creatives#website",
+    colors: [
+      "white",
+      "orange",
+      "white",
+      "green",
+      "white",
+      "orange",
+      "white",
+      "blue",
+      "white",
+    ],
+  },
+  {
+    words:
+      "retarget#business#content#posts#content-marketing#visual#audit#SEO#analytics#packing",
+    colors: [
+      "green",
       "white",
       "blue",
       "white",
@@ -45,34 +91,68 @@ export const wordGroups = [
       "white",
       "white",
       "white",
+      "green",
     ],
   },
   {
-    words: "mock ups#product design#analytics#metrics#content writing",
-    colors: ["green", "white", "blue", "white", "green"],
+    words:
+      "Facebook ads#mock ups#product design#analytics#metrics#content writing#rebranding",
+    colors: ["white", "green", "white", "blue", "white", "green", "white"],
   },
   {
     words:
-      "seo strategy#illustration#posts#writing#ups#brand identity#prototyping",
-    colors: ["white", "orange", "white", "blue", "white", "blue", "white"],
-  },
-  {
-    words:
-      "Facebook ads#packing#creatives#stories#content#web design#development",
-    colors: ["blue", "white", "white", "green", "white", "orange", "white"],
-  },
-  {
-    words: "website#Smm#brand#writing#automation tools#content#PPC#branding",
+      "Smm#seo strategy#illustration#posts#writing#ups#brand identity#prototyping#creatives",
     colors: [
-      "white",
       "green",
+      "white",
+      "orange",
       "white",
       "blue",
       "white",
       "blue",
       "white",
-      "green",
+      "orange",
     ],
+  },
+  {
+    words:
+      "Facebook ads#packing#creatives#stories#content#web design#development#analytics",
+    colors: [
+      "blue",
+      "white",
+      "white",
+      "green",
+      "white",
+      "orange",
+      "white",
+      "blue",
+    ],
+  },
+  {
+    words:
+      "brand#website#Smm#brand#writing#automation tools#content#PPC#branding#mock ups",
+    colors: [
+      "orange",
+      "white",
+      "green",
+      "white",
+      "blue",
+      "white",
+      "blue",
+      "white",
+      "green",
+      "white",
+    ],
+  },
+  {
+    words:
+      "web#storytelling#email-marketing#rebranding#content writing#Instagram ads#front-end",
+    colors: ["green", "white", "orange", "white", "green", "white", "blue"],
+  },
+  {
+    words:
+      "creatives#illustration#visual#automation tools#content plan#retarget#product design",
+    colors: ["white", "green", "white", "blue", "white", "orange", "white"],
   },
 ];
 

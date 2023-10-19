@@ -7,11 +7,14 @@ const DigitalMarketingSection = () => {
     <section style={{ position: "relative" }}>
       <ul style={{ padding: "20px 0 40px" }}>
         {wordGroups.map((group, groupIndex) => (
-          <li key={groupIndex} style={{ textAlign: "center" }}>
+          <li
+            key={groupIndex}
+            style={{ textAlign: "center", whiteSpace: "nowrap" }}
+          >
             {group.words.split("#").map((word, wordIndex) => (
               <span
                 key={wordIndex}
-                className={styles.word}
+                className={`${styles.word} ${styles[group.colors[wordIndex]]}`}
                 style={{ color: `var(--${group.colors[wordIndex]})` }}
               >
                 {word}
