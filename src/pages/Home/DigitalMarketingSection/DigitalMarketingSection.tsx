@@ -5,7 +5,7 @@ import Image from "next/image";
 const DigitalMarketingSection = () => {
   return (
     <section style={{ position: "relative" }}>
-      <ul style={{ padding: "20px 0 40px" }}>
+      <ul style={{ padding: "20px 0 40px", overflowX: "hidden" }}>
         {wordGroups.map((group, groupIndex) => (
           <li
             key={groupIndex}
