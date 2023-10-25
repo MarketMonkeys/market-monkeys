@@ -1,0 +1,20 @@
+.imgLarge {
+    display: none;
+}
+
+
+.contentImgWrapper {
+    height: calc(770px - 80px);
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (width >= 1920px) {
+    .imgSmall {
+        display: none;
+    }
+
+    .imgLarge {
+        display: block;
+    }
+}
