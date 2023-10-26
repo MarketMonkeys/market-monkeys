@@ -1,6 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import BlueBlock from "@/pages/About/BlueBlock/BlueBlock";
+import BlueBlockSection from "@/pages/About/BlueBlockSection/BlueBlockSection";
+import CarouselSection from "@/pages/About/CarouselSection/CarouselSection";
+import ScrollIcon from "@/components/Icons/ScrollIcon";
 
 export default function About() {
   return (
@@ -30,9 +32,39 @@ export default function About() {
         />
       </div>
       <div className={styles.contentImgWrapper}>
-        <h1>About</h1>
+        <div
+          style={{
+            maxWidth: "1550px",
+            width: "100%",
+            height: "100%",
+            margin: "0 auto",
+            position: "relative",
+          }}
+        >
+          <CarouselSection />
+          <div style={{ bottom: "100px", left: "150px", position: "absolute" }}>
+            <p className={styles.heading}>About Us</p>
+            <p className={styles.text}>
+              Market Monkeys is your dedicated partner
+              <br /> in driving online business growth through
+              <br /> strategic marketing solutions.
+            </p>
+          </div>
+          <div
+            style={{
+              bottom: "90px",
+              right: "150px",
+              position: "absolute",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <p style={{ marginRight: "10px" }}>Scroll down for more</p>
+            <ScrollIcon />
+          </div>
+        </div>
       </div>
-      <BlueBlock />
+      <BlueBlockSection />
     </section>
   );
 }

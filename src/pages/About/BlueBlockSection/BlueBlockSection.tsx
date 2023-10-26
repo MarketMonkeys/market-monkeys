@@ -1,7 +1,7 @@
 import { statisticalTerms } from "@/common/mocks/about";
-import styles from "./BlueBlock.module.css";
+import styles from "./BlueBlockSection.module.css";
 import Card from "./Card/Card";
-const BlueBlock = () => {
+const BlueBlockSection = () => {
   return (
     <section className={styles.wrapper}>
       <div style={{ maxWidth: "1200px", width: "100%", margin: "0 auto" }}>
@@ -46,4 +46,4 @@ const BlueBlock = () => {
   );
 };
 
-export default BlueBlock;
+export default BlueBlockSection;
