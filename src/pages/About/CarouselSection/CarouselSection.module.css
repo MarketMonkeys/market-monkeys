@@ -1,0 +1,21 @@
+.slider {
+  max-width: 100%;
+  padding-top: 80px;
+}
+
+.slider img {
+  transition: 0.3s ease-in;
+}
+
+.sliderSlide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  height: 328px;
+}
+
+.slider :global(.slick-center) img {
+  width: 432px;
+  height: 328px;
+}
