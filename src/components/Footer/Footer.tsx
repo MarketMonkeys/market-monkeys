@@ -85,11 +85,11 @@ const Footer = () => {
                 className={styles.numberContact}
                 style={{ marginBottom: "20px" }}
               >
-                <span>+48 511 525 892</span>
+                <a href="tel:+48-511-525-892">+48 511 525 892</a>
                 <span className={styles.numberContactCountry}>PL</span>
               </div>
               <div className={styles.numberContact}>
-                <span>+38 099 986 72 20</span>
+                <a href="tel:+38-099-986-72-20">+38 099 986 72 20</a>
                 <span className={styles.numberContactCountry}>UA</span>
               </div>
             </div>

@@ -3,6 +3,8 @@ import styles from "./page.module.css";
 import BlueBlockSection from "@/pages/About/BlueBlockSection/BlueBlockSection";
 import CarouselSection from "@/pages/About/CarouselSection/CarouselSection";
 import ScrollIcon from "@/components/Icons/ScrollIcon";
+import AccordionSection from "@/pages/About/AccordionSection/AccordionSection";
+import FormSection from "@/components/FormSection/FormSection";
 
 export default function About() {
   return (
@@ -65,6 +67,8 @@ export default function About() {
         </div>
       </div>
       <BlueBlockSection />
+      <AccordionSection />
+      <FormSection />
     </section>
   );
 }

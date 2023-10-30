@@ -1,0 +1,76 @@
+.accordionButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: var(--h4-headline-font);
+  font-weight: var(--h4-headline-font-weight);
+  line-height: 30px;
+  color: var(--white);
+}
+
+.border {
+  border-radius: 10px;
+  height: 1px;
+  width: 100%;
+  background: rgba(252, 252, 252, 0.2);
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transition: all 0.5s;
+}
+
+.iconWrapper:hover {
+  background: #ff955c;
+}
+
+.iconWrapper:focus {
+  background: #ff6614;
+}
+
+.iconWrapper.expanded {
+  background: var(--orange);
+}
+
+.iconWrapper.expanded svg path,
+.iconWrapper:hover svg path,
+.iconWrapper:focus svg path {
+  fill: white;
+}
+
+.accordionPanel {
+  animation: fadein 0.35s ease-in;
+  padding-top: 30px;
+}
+
+.innerAccordionPanel {
+    font-size: var(--text-main-font);
+    font-style: normal;
+    font-weight: var(--text-main-font-weight);
+    line-height: 22px;
+    opacity: 0.6;
+    color: var(--white);
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

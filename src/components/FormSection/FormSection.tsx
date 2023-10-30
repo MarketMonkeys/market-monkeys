@@ -1,13 +1,11 @@
-import Image from "next/image";
-import Carousel from "./Carousel/Carousel";
-import styles from "./TeamSection.module.css";
 import Form from "@/components/Form/Form";
+import Image from "next/image";
+import styles from "./FormSection.module.css";
 
-const TeamSection = () => {
+const FormSection = () => {
   return (
     <section className={styles.wrapper}>
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        <Carousel />
         <div style={{ display: "flex" }}>
           <Image
             src="/images/digital-marketing-phone.svg"
@@ -23,4 +21,4 @@ const TeamSection = () => {
   );
 };
 
-export default TeamSection;
+export default FormSection;
