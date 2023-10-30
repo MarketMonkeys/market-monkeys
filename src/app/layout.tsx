@@ -19,7 +19,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={mulish.className}>
-        <link rel="icon" href="images/logo.svg" sizes="any" />
+        <link rel="icon" href="images/favicon-16x16.ico" sizes="16x16" />
+        <link rel="icon" href="images/favicon-32x32.ico" sizes="32x32" />
+        <link rel="icon" href="images/favicon-64x64.ico" sizes="64x64" />
+        <link rel="icon" href="images/favicon-128x128.ico" sizes="128x128" />
+        <link rel="icon" href="images/favicon-256x256.ico" sizes="256x256" />
+        <link rel="icon" href="images/favicon-512x512.ico" sizes="512x512" />
+        <link
+          rel="apple-touch-icon"
+          href="images/favicon-512x512.ico"
+          sizes="any"
+        />
         <Header />
         {children}
         <Footer />
