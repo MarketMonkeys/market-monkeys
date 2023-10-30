@@ -1,12 +1,8 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import BlueBlockSection from "@/pages/About/BlueBlockSection/BlueBlockSection";
-import CarouselSection from "@/pages/About/CarouselSection/CarouselSection";
 import ScrollIcon from "@/components/Icons/ScrollIcon";
-import AccordionSection from "@/pages/About/AccordionSection/AccordionSection";
-import FormSection from "@/components/FormSection/FormSection";
 
-export default function About() {
+export default function Projects() {
   return (
     <section>
       <div
@@ -19,15 +15,15 @@ export default function About() {
         }}
       >
         <Image
-          src="/images/about-bg-1200.png"
-          alt="About bg"
+          src="/images/projects-bg-1200.png"
+          alt="Projects bg"
           className={styles.imgSmall}
           priority={true}
           fill={true}
         />
         <Image
           src="/images/about-bg-1920.png"
-          alt="About bg"
+          alt="Projects bg"
           className={styles.imgLarge}
           priority={true}
           fill={true}
@@ -43,13 +39,12 @@ export default function About() {
             position: "relative",
           }}
         >
-          <CarouselSection />
           <div style={{ bottom: "100px", left: "150px", position: "absolute" }}>
-            <p className={styles.heading}>About Us</p>
+            <p className={styles.heading}>Our Projects</p>
             <p className={styles.text}>
-              Market Monkeys is your dedicated partner
-              <br /> in driving online business growth through
-              <br /> strategic marketing solutions.
+              Explore our portfolio of successful projects,
+              <br /> where we&apos;ve helped businesses like yours
+              <br /> thrive in the digital landscape.
             </p>
           </div>
           <div
@@ -68,9 +63,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      <BlueBlockSection />
-      <AccordionSection />
-      <FormSection />
     </section>
   );
 }
