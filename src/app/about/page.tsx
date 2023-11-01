@@ -12,10 +12,11 @@ export default function About() {
       <div
         style={{
           width: "100%",
-          height: "770px",
+          height: "100vh",
+          // height: "770px",
           position: "absolute",
           top: "0",
-          left: "0",
+          left: "0"
         }}
       >
         <Image
@@ -40,7 +41,7 @@ export default function About() {
             width: "100%",
             height: "100%",
             margin: "0 auto",
-            position: "relative",
+            position: "relative"
           }}
         >
           <CarouselSection />
@@ -58,7 +59,7 @@ export default function About() {
               right: "150px",
               position: "absolute",
               display: "flex",
-              alignItems: "center",
+              alignItems: "center"
             }}
           >
             <p style={{ marginRight: "10px" }} className={styles.text}>

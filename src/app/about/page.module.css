@@ -3,7 +3,7 @@
 }
 
 .contentImgWrapper {
-  height: calc(770px - 100px);
+  height: calc(100vh - 100px);
   position: relative;
   width: 100%;
   z-index: 1;
@@ -21,10 +21,10 @@
 
 .text {
   color: var(--white);
-font-size: var(--text-main-font);
-font-style: normal;
-font-weight: var(--text-main-font-weight);
-line-height: 22px;
+  font-size: var(--text-main-font);
+  font-style: normal;
+  font-weight: var(--text-main-font-weight);
+  line-height: 22px;
 }
 
 @media screen and (width >= 1920px) {
