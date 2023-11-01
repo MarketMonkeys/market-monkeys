@@ -6,15 +6,13 @@
     "plugin:react-hooks/recommended",
     "prettier"
   ],
-  "plugins": [
-    "prettier",
-    "@typescript-eslint"
-  ],
+  "plugins": ["prettier", "@typescript-eslint"],
   "parser": "@typescript-eslint/parser",
   "rules": {
     "prettier/prettier": [
       "warn",
       {
+        "singleQuote": true,
         "endOfLine": "auto"
       }
     ]
