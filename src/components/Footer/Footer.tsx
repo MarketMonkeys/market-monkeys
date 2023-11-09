@@ -7,19 +7,22 @@ import TelegramIcon from '../Icons/TelegramIcon';
 import FacebookIcon from '../Icons/FacebookIcon';
 import LinkedinIcon from '../Icons/LinkedinIcon';
 import ScrollButton from './components/ScrollButton/ScrollButton';
+import Link from 'next/link';
 
-const HeaderLogo = () => {
+const FooterLogo = () => {
   return (
-    <h1 className={styles.footerLogo}>
-      <span>Market</span>
-      <Image
-        src="/images/logo.svg"
-        alt="Market Monkeys"
-        width={46}
-        height={60}
-      />
-      <span>Monkeys</span>
-    </h1>
+    <Link href={'/'}>
+      <h1 className={styles.footerLogo}>
+        <span>Market</span>
+        <Image
+          src="/images/logo.svg"
+          alt="Market Monkeys"
+          width={46}
+          height={60}
+        />
+        <span>Monkeys</span>
+      </h1>
+    </Link>
   );
 };
 
@@ -42,7 +45,7 @@ const Footer = () => {
               justifyContent: 'space-between',
             }}
           >
-            <HeaderLogo />
+            <FooterLogo />
             <span className={styles.info}>©All rights reserved 2023</span>
           </div>
           <div
@@ -53,7 +56,10 @@ const Footer = () => {
               paddingTop: '20px',
             }}
           >
-            <NavBar />
+            <div style={{ marginLeft: '-12px' }}>
+              <NavBar />
+            </div>
+
             <div style={{ marginTop: '80px' }}>
               <h5 className={styles.socialTitle}>We in Social Media</h5>
               <div
