@@ -27,10 +27,13 @@ const FooterLogo = () => {
 };
 
 const Footer = () => {
+  const mmEmail = 'admin@market-monkeys.com';
   return (
     <footer className={styles.footer}>
       <div>
-        <p className={styles.email}>admin@market-monkeys.com</p>
+        <p className={styles.email}>
+          <a href={`mailto:${mmEmail}`}>{mmEmail}</a>
+        </p>
         <div
           style={{
             display: 'flex',
