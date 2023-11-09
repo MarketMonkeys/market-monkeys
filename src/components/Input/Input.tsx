@@ -1,8 +1,8 @@
-import { ChangeEvent, SVGProps, forwardRef, useId } from "react";
-import styles from "./Input.module.css";
-import IconError from "../Icons/IconError";
+import { ChangeEvent, SVGProps, forwardRef, useId } from 'react';
+import styles from './Input.module.css';
+import IconError from '../Icons/IconError';
 
-type InputType = "text" | "email" | "password" | "tel";
+type InputType = 'text' | 'email' | 'password' | 'tel';
 
 interface InputProps {
   type: InputType;
@@ -21,8 +21,8 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
       type,
       value,
       name,
-      placeholder = "",
-      errorMsg = "",
+      placeholder = '',
+      errorMsg = '',
       isDisabled = false,
       onChange,
       Icon = null,
@@ -61,6 +61,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
   }
 );
 
-Input.displayName = "Input";
+Input.displayName = 'Input';
 
 export default Input;

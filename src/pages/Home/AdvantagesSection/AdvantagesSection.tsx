@@ -1,11 +1,11 @@
-import WebIcon from "@/components/Icons/WebIcon";
-import styles from "./AdvantagesSection.module.css";
-import Card from "./Card/Card";
-import SeoIcon from "@/components/Icons/SeoIcon";
-import phoneImg from "/public/images/phone.svg";
-import Image from "next/image";
-import BrandIcon from "@/components/Icons/BrandIcon";
-import AuditIcon from "@/components/Icons/AuditIcon";
+import WebIcon from '@/components/Icons/WebIcon';
+import styles from './AdvantagesSection.module.css';
+import Card from './Card/Card';
+import SeoIcon from '@/components/Icons/SeoIcon';
+import phoneImg from '/public/images/phone.svg';
+import Image from 'next/image';
+import BrandIcon from '@/components/Icons/BrandIcon';
+import AuditIcon from '@/components/Icons/AuditIcon';
 
 const AdvatagesSection = () => {
   return (

@@ -1,9 +1,9 @@
-import { LinkHTMLAttributes, ReactNode } from "react";
-import styles from "./LinkButton.module.css";
-import Link from "next/link";
+import { LinkHTMLAttributes, ReactNode } from 'react';
+import styles from './LinkButton.module.css';
+import Link from 'next/link';
 
-type ButtonVariant = "main" | "secondary" | "primary";
-type ButtonSize = "s" | "l";
+type ButtonVariant = 'main' | 'secondary' | 'primary';
+type ButtonSize = 's' | 'l';
 
 interface IButton extends LinkHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode;
@@ -25,9 +25,9 @@ const BUTTON_SIZE: { [key in ButtonSize]: string } = {
 
 const LinkButton = ({
   children,
-  variant = "primary",
+  variant = 'primary',
   href,
-  size = "s",
+  size = 's',
   ...props
 }: IButton) => {
   return (

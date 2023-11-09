@@ -1,5 +1,5 @@
-import { SVGProps } from "react";
-import styles from "./SocialMediaButton.module.css";
+import { SVGProps } from 'react';
+import styles from './SocialMediaButton.module.css';
 
 interface SocialMediaButtonProps {
   Icon: (props: SVGProps<SVGSVGElement>) => JSX.Element | null;
