@@ -14,7 +14,7 @@ import styles from './Accordion.module.css';
 
 const Accordion = () => {
   return (
-    <AccordionComponent>
+    <AccordionComponent allowZeroExpanded>
       {accordionItems.map((item, index) => (
         <AccordionItem key={item.heading + index} uuid={`${index}`}>
           <AccordionItemState>
