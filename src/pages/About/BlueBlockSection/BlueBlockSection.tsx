@@ -1,9 +1,11 @@
 import { statisticalTerms } from '@/common/mocks/about';
 import styles from './BlueBlockSection.module.css';
 import Card from './Card/Card';
+import BlueSectionWrapper from './BlueSectionWrapper';
+
 const BlueBlockSection = () => {
   return (
-    <section className={styles.wrapper}>
+    <BlueSectionWrapper>
       <div style={{ maxWidth: '1200px', width: '100%', margin: '0 auto' }}>
         <p className={styles.bigText}>
           Our vision is to shape the future of digital marketing through
@@ -42,7 +44,7 @@ const BlueBlockSection = () => {
           ))}
         </ul>
       </div>
-    </section>
+    </BlueSectionWrapper>
   );
 };
 
