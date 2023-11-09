@@ -1,8 +1,16 @@
 .imgLarge {
   display: none;
 }
+
 .imgSmall {
   object-fit: cover;
+}
+
+.shadow {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, #0a0a0a 100%);
 }
 
 .contentImgWrapper {
