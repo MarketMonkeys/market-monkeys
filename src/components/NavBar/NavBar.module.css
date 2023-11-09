@@ -19,6 +19,6 @@
 }
 
 .activeLink {
-  outline: auto;
+  outline: white solid 1px;
   transition: all 0.4s;
 }

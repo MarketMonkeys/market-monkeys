@@ -1,6 +1,9 @@
 .imgLarge {
   display: none;
 }
+.imgSmall {
+  object-fit: cover;
+}
 
 .contentImgWrapper {
   height: calc(100vh - 100px);
@@ -27,12 +30,13 @@
   line-height: 22px;
 }
 
-@media screen and (width >= 1920px) {
+@media screen and (min-width: 1920px) {
   .imgSmall {
     display: none;
   }
 
   .imgLarge {
+    object-fit: cover;
     display: block;
   }
 }

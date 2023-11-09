@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import BlueBlockSection from '@/pages/About/BlueBlockSection/BlueBlockSection';
-import CarouselSection from '@/pages/About/CarouselSection/CarouselSection';
+// import CarouselSection from '@/pages/About/CarouselSection/CarouselSection';
 import ScrollIcon from '@/components/Icons/ScrollIcon';
 import AccordionSection from '@/pages/About/AccordionSection/AccordionSection';
 import FormSection from '@/components/FormSection/FormSection';
@@ -20,6 +20,20 @@ export default function About() {
         }}
       >
         <Image
+          src="/images/about-bg-1440.jpg"
+          alt="About bg"
+          className={styles.imgSmall}
+          priority={true}
+          fill={true}
+        />
+        <Image
+          src="/images/about-bg-1920_main.jpg"
+          alt="About bg"
+          className={styles.imgLarge}
+          priority={true}
+          fill={true}
+        />
+        {/* <Image
           src="/images/about-bg-1200.png"
           alt="About bg"
           className={styles.imgSmall}
@@ -32,20 +46,20 @@ export default function About() {
           className={styles.imgLarge}
           priority={true}
           fill={true}
-        />
+        /> */}
       </div>
       <div className={styles.contentImgWrapper}>
         <div
           style={{
-            maxWidth: '1550px',
+            // maxWidth: '1550px',
             width: '100%',
             height: '100%',
-            margin: '0 auto',
+            // margin: '0 auto',
             position: 'relative',
           }}
         >
-          <CarouselSection />
-          <div style={{ bottom: '100px', left: '150px', position: 'absolute' }}>
+          {/* <CarouselSection /> */}
+          <div style={{ bottom: '100px', left: '120px', position: 'absolute' }}>
             <p className={styles.heading}>About Us</p>
             <p className={styles.text}>
               Market Monkeys is your dedicated partner
@@ -56,7 +70,7 @@ export default function About() {
           <div
             style={{
               bottom: '90px',
-              right: '150px',
+              right: '120px',
               position: 'absolute',
               display: 'flex',
               alignItems: 'center',
