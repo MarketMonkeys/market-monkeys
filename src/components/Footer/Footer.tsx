@@ -1,12 +1,12 @@
-import Image from "next/image";
-import styles from "./Footer.module.css";
-import NavBar from "../NavBar/NavBar";
-import SocialMediaButton from "../SocialMediaButton/SocialMediaButton";
-import InstagramIcon from "../Icons/InstagramIcon";
-import TelegramIcon from "../Icons/TelegramIcon";
-import FacebookIcon from "../Icons/FacebookIcon";
-import LinkedinIcon from "../Icons/LinkedinIcon";
-import ScrollButton from "./components/ScrollButton/ScrollButton";
+import Image from 'next/image';
+import styles from './Footer.module.css';
+import NavBar from '../NavBar/NavBar';
+import SocialMediaButton from '../SocialMediaButton/SocialMediaButton';
+import InstagramIcon from '../Icons/InstagramIcon';
+import TelegramIcon from '../Icons/TelegramIcon';
+import FacebookIcon from '../Icons/FacebookIcon';
+import LinkedinIcon from '../Icons/LinkedinIcon';
+import ScrollButton from './components/ScrollButton/ScrollButton';
 
 const HeaderLogo = () => {
   return (
@@ -30,16 +30,16 @@ const Footer = () => {
         <p className={styles.email}>admin@market-monkeys.com</p>
         <div
           style={{
-            display: "flex",
-            justifyContent: "space-between",
-            height: "320px",
+            display: 'flex',
+            justifyContent: 'space-between',
+            height: '320px',
           }}
         >
           <div
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
             }}
           >
             <HeaderLogo />
@@ -47,20 +47,20 @@ const Footer = () => {
           </div>
           <div
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              paddingTop: "20px",
+              display: 'flex',
+              flexDirection: 'column',
+              // justifyContent: 'space-between',
+              paddingTop: '20px',
             }}
           >
             <NavBar />
-            <div>
+            <div style={{ marginTop: '80px' }}>
               <h5 className={styles.socialTitle}>We in Social Media</h5>
               <div
                 style={{
-                  display: "flex",
-                  width: "300px",
-                  justifyContent: "space-between",
+                  display: 'flex',
+                  width: '300px',
+                  justifyContent: 'space-between',
                 }}
               >
                 <SocialMediaButton Icon={InstagramIcon} />
@@ -69,21 +69,20 @@ const Footer = () => {
                 <SocialMediaButton Icon={LinkedinIcon} />
               </div>
             </div>
-            <span className={styles.info}>Privacy Policy</span>
           </div>
           <div
             style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "space-between",
-              alignItems: "flex-end",
-              paddingTop: "20px",
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              alignItems: 'flex-end',
+              paddingTop: '20px',
             }}
           >
             <div className={styles.contacts}>
               <div
                 className={styles.numberContact}
-                style={{ marginBottom: "20px" }}
+                style={{ marginBottom: '20px' }}
               >
                 <a href="tel:+48-511-525-892">+48 511 525 892</a>
                 <span className={styles.numberContactCountry}>PL</span>
@@ -94,9 +93,12 @@ const Footer = () => {
               </div>
             </div>
             <ScrollButton />
-            <span className={styles.info} style={{ alignSelf: "flex-end" }}>
-              Terms of Use
-            </span>
+            <div style={{ display: 'flex', gap: '24px' }}>
+              <span className={styles.info}>Privacy Policy</span>
+              <span className={styles.info} style={{ alignSelf: 'flex-end' }}>
+                Terms of Use
+              </span>
+            </div>
           </div>
         </div>
       </div>
