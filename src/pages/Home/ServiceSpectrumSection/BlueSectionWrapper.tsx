@@ -1,10 +1,17 @@
 'use client';
-import React, { useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useScroll, animated } from '@react-spring/web';
 
 const BlueSectionWrapper = ({ children }: { children: React.ReactNode }) => {
-  const windowHeight = useRef<number>(window.innerHeight);
+  const [windowHeight, setWindowHeight] = useState<number>(0);
   const { scrollY } = useScroll();
+
+  useEffect(() => {
+    if (window) {
+      console.log('window');
+      setWindowHeight(window.innerHeight);
+    }
+  }, []);
 
   return (
     <animated.div
@@ -15,7 +22,7 @@ const BlueSectionWrapper = ({ children }: { children: React.ReactNode }) => {
         position: 'relative',
         zIndex: 60,
         marginTop: scrollY.to((val) =>
-          val < windowHeight.current ? -val : -windowHeight.current
+          val < windowHeight ? -val : -windowHeight
         ),
       }}
     >

@@ -1,11 +1,18 @@
 'use client';
-import React, { useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useScroll, animated } from '@react-spring/web';
 import styles from './BlueBlockSection.module.css';
 
 const BlueSectionWrapper = ({ children }: { children: React.ReactNode }) => {
-  const windowHeight = useRef<number>(window.innerHeight);
+  const [windowHeight, setWindowHeight] = useState<number>(0);
   const { scrollY } = useScroll();
+
+  useEffect(() => {
+    if (window) {
+      console.log('window');
+      setWindowHeight(window.innerHeight);
+    }
+  }, []);
 
   return (
     <animated.section
@@ -13,9 +20,7 @@ const BlueSectionWrapper = ({ children }: { children: React.ReactNode }) => {
       style={{
         zIndex: 60,
         marginTop: scrollY.to((val) =>
-          val < windowHeight.current
-            ? -(val + 50)
-            : -(windowHeight.current + 50)
+          val < windowHeight ? -(val + 50) : -(windowHeight + 50)
         ),
       }}
     >
