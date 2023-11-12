@@ -1,25 +1,25 @@
 .wrapper {
+  height: 360px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
   border-radius: 10px;
-  margin-bottom: 40px;
+  border: 1px solid rgba(252, 252, 252, 0.2);
+  transition: all 0.5s;
 }
 
-.wrapper:last-child {
-  margin-bottom: 0;
+.wrapper:nth-child(2n) {
+  flex-direction: row-reverse;
 }
 
 .cardWrapper {
-  padding: 30px;
-  border-radius: 10px;
-  border: 1px solid rgba(252, 252, 252, 0.2);
-  height: 330px;
-  width: 588px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all .5s;
+  flex: 1;
+  flex-basis: 0;
+  padding: 30px;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
 
 .headingWrapper {
@@ -40,11 +40,16 @@
   opacity: 0.4;
 }
 
+.descriptionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .subtitle {
   color: var(--white);
   font-size: var(--h5-headline-font);
   font-weight: var(--h5-headline-font-weight);
-  margin-bottom: 10px;
 }
 
 .text {
@@ -60,7 +65,6 @@
   color: var(--white);
   opacity: 0.6;
   display: block;
-  margin-top: 10px;
 }
 
 .imgWrapper {
@@ -71,7 +75,14 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin-bottom: 10px;
+  fill: var(--black);
+}
+
+.imageWrapper {
+  flex: 1;
+  flex-basis: 0;
+  overflow: hidden;
+  padding: 30px;
 }
 
 .image {
@@ -84,14 +95,8 @@
 }
 
 .wrapper:hover .cardWrapper {
-  background: var(--white);
+  background: #202020;
   border: initial;
-}
-
-.wrapper:hover .index,
-.wrapper:hover .heading,
-.wrapper:hover .subtitle {
-  color: var(--black);
 }
 
 .wrapper:hover .imgWrapper {
@@ -101,17 +106,20 @@
 .wrapper:hover .imgWrapper :global(.icon__fill path) {
   fill: var(--white);
 }
+/* .wrapper:hover .imgWrapper :global(.icon__fill path) {
+  fill: var(--white);
+} */
 
-.wrapper:hover .text,
+/* .wrapper:hover .text,
 .wrapper:hover .label {
   color: var(--black);
-}
+} */
 
-.wrapper:hover a {
+/* .wrapper:hover a {
   background: var(--orange);
   color: var(--white);
-}
+} */
 
-.wrapper:hover .image {
+/* .wrapper:hover .image {
   transform: scale(1.1);
-}
+} */

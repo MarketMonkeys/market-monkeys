@@ -10,7 +10,6 @@ interface OldCardProps {
   text: string;
   src: string;
   label?: string;
-  isReversed: boolean;
 }
 
 const OldCard = ({
@@ -19,21 +18,32 @@ const OldCard = ({
   subtitle,
   text,
   label,
-  src,
-  isReversed,
+  src
 }: OldCardProps) => {
   return (
     <div className={styles.wrapper}>
       <div
         className={styles.cardWrapper}
-        style={{ order: isReversed ? "2" : "1" }}
+        style={
+          index % 2 === 0
+            ? {
+                paddingLeft: "22px",
+                borderTopLeftRadius: "0",
+                borderBottomLeftRadius: "0px"
+              }
+            : {
+                paddingRight: "22px",
+                borderTopRightRadius: "0",
+                borderBottomRightRadius: "0px"
+              }
+        }
       >
         <div className={styles.headingWrapper}>
           <h4 className={styles.heading}>{title}</h4>
           <span className={styles.index}>0{index}</span>
         </div>
         <div style={{ display: "flex", justifyContent: "space-between" }}>
-          <div>
+          <div className={styles.descriptionBlock}>
             <div className={styles.imgWrapper}>
               <DoneIcon />
             </div>
@@ -51,17 +61,18 @@ const OldCard = ({
         </div>
       </div>
       <div
-        style={{
-          order: isReversed ? "1" : "2",
-          overflow: "hidden",
-          borderRadius: "10px",
-        }}
+        className={styles.imageWrapper}
+        style={
+          index % 2 === 0
+            ? { paddingRight: "22px", textAlign: "left" }
+            : { paddingLeft: "22px", textAlign: "right" }
+        }
       >
         <Image
           draggable={false}
           src={src}
-          width={588}
-          height={330}
+          width={522}
+          height={300}
           alt={`${title} image`}
           className={styles.image}
           quality={100}
