@@ -8,7 +8,7 @@ const ProjectPortfolioSection = () => {
       <h2 className={styles.heading}>Project Portfolio</h2>
       <div className={styles.cardsWrapper}>
         {projectPortfolioSection.map(
-          ({ title, subtitle, label, text, src }, index) => {
+          ({ title, subtitle, label, text, src, srcHover }, index) => {
             const cardIndex = index + 1;
             return (
               <OldCard
@@ -19,6 +19,7 @@ const ProjectPortfolioSection = () => {
                 text={text}
                 label={label}
                 src={src}
+                srcHover={srcHover}
               />
             );
           }

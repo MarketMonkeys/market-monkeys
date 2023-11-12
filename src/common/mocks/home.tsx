@@ -7,7 +7,7 @@ export const wordGroups = [
   {
     words:
       "front-end#posts#email-marketing#development#rebranding#content plan#photo processing",
-    colors: ["blue", "white", "orange", "white", "blue", "white", "green"],
+    colors: ["blue", "white", "orange", "white", "blue", "white", "green"]
   },
   {
     words:
@@ -21,8 +21,8 @@ export const wordGroups = [
       "white",
       "orange",
       "white",
-      "green",
-    ],
+      "green"
+    ]
   },
   {
     words:
@@ -36,18 +36,18 @@ export const wordGroups = [
       "green",
       "white",
       "blue",
-      "white",
-    ],
+      "white"
+    ]
   },
   {
     words:
       "content#ppc#content plan#Facebook ads#photo processing#Web development#seo",
-    colors: ["blue", "white", "orange", "green", "white", "orange", "white"],
+    colors: ["blue", "white", "orange", "green", "white", "orange", "white"]
   },
   {
     words:
       "development#creatives#website audit#seo strategy#visual#icons#illustration#research",
-    colors: ["green", "white", "orange", "green", "white", "orange", "white"],
+    colors: ["green", "white", "orange", "green", "white", "orange", "white"]
   },
   {
     words:
@@ -60,8 +60,8 @@ export const wordGroups = [
       "blue",
       "white",
       "orange",
-      "white",
-    ],
+      "white"
+    ]
   },
   {
     words:
@@ -75,8 +75,8 @@ export const wordGroups = [
       "orange",
       "white",
       "blue",
-      "white",
-    ],
+      "white"
+    ]
   },
   {
     words:
@@ -91,13 +91,13 @@ export const wordGroups = [
       "white",
       "white",
       "white",
-      "green",
-    ],
+      "green"
+    ]
   },
   {
     words:
       "Facebook ads#mock ups#product design#analytics#metrics#content writing#rebranding",
-    colors: ["white", "green", "white", "blue", "white", "green", "white"],
+    colors: ["white", "green", "white", "blue", "white", "green", "white"]
   },
   {
     words:
@@ -111,8 +111,8 @@ export const wordGroups = [
       "white",
       "blue",
       "white",
-      "orange",
-    ],
+      "orange"
+    ]
   },
   {
     words:
@@ -125,8 +125,8 @@ export const wordGroups = [
       "white",
       "orange",
       "white",
-      "blue",
-    ],
+      "blue"
+    ]
   },
   {
     words:
@@ -141,42 +141,42 @@ export const wordGroups = [
       "blue",
       "white",
       "green",
-      "white",
-    ],
+      "white"
+    ]
   },
   {
     words:
       "web#storytelling#email-marketing#rebranding#content writing#Instagram ads#front-end",
-    colors: ["green", "white", "orange", "white", "green", "white", "blue"],
+    colors: ["green", "white", "orange", "white", "green", "white", "blue"]
   },
   {
     words:
       "creatives#illustration#visual#automation tools#content plan#retarget#product design",
-    colors: ["white", "green", "white", "blue", "white", "orange", "white"],
-  },
+    colors: ["white", "green", "white", "blue", "white", "orange", "white"]
+  }
 ];
 
 export const serviceSpectrum = [
   {
     icon: <SeoIcon />,
     title: "SEO",
-    text: `Creating strategies, keyword writing, unique description, organic traffic, attracting customers to a specific product or service - it's all about SEO & Content.`,
+    text: `Creating strategies, keyword writing, unique description, organic traffic, attracting customers to a specific product or service - it's all about SEO & Content.`
   },
   {
     icon: <WebIcon />,
     title: "Website",
-    text: `Developing from A to Z your unique platform that matters to your clients!`,
+    text: `Developing from A to Z your unique platform that matters to your clients!`
   },
   {
     icon: <BrandIcon />,
     title: "Branding",
-    text: `We create a unique brand, thereby increasing your visibility and sales. The brand always works for you!`,
+    text: `We create a unique brand, thereby increasing your visibility and sales. The brand always works for you!`
   },
   {
     icon: <AuditIcon />,
     title: "Audit",
-    text: `Integration of special tools to automate marketing processes such as mailings, customer experience management, etc. And you will also know all the mistakes on the site and not only!`,
-  },
+    text: `Integration of special tools to automate marketing processes such as mailings, customer experience management, etc. And you will also know all the mistakes on the site and not only!`
+  }
 ];
 
 type ServiceSpectrumImagesType = {
@@ -187,7 +187,7 @@ export const serviceSpectrumImages: ServiceSpectrumImagesType = {
   Audit: "/images/audit.svg",
   SEO: "/images/seo.svg",
   Branding: "/images/branding.svg",
-  Website: "/images/website.svg",
+  Website: "/images/website.svg"
 };
 
 export const projectPortfolioSection = [
@@ -197,6 +197,7 @@ export const projectPortfolioSection = [
     text: "Web Design | Web Development | SEO Strategy",
     label: "Content Marketing",
     src: "/images/nft-marketplace.png",
+    srcHover: "/images/nft-marketplace_hover.png"
   },
   {
     title: "Fotballer | UI/UX",
@@ -204,12 +205,14 @@ export const projectPortfolioSection = [
     text: "Content-Marketing | Email-Marketing",
     label: "Prototyping",
     src: "/images/footballer.png",
+    srcHover: "/images/footballer_hover.png"
   },
   {
     title: "Space Academy | Social Media",
     subtitle: "Our Plan of Action",
     text: "SMM | Key-Visual | Retarget | Facebook Ads",
     src: "/images/space-academy.png",
+    srcHover: "/images/space-academy_hover.png"
   },
   {
     title: "Trifecta | Document Assistant Website | UI/UX",
@@ -217,5 +220,6 @@ export const projectPortfolioSection = [
     text: "SEO Strategy | PPC | Email-Marketing",
     label: "Automation Tools",
     src: "/images/trifecta.png",
-  },
+    srcHover: "/images/trifecta_hover.png"
+  }
 ];
