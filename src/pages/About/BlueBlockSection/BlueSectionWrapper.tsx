@@ -9,7 +9,6 @@ const BlueSectionWrapper = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     if (window) {
-      console.log('window');
       setWindowHeight(window.innerHeight);
     }
   }, []);
