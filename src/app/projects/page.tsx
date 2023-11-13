@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import ScrollIcon from '@/components/Icons/ScrollIcon';
+import ProjectsSection from '@/pages/Projects/ProjectsSection/ProjectsSection';
 
 export default function Projects() {
   return (
@@ -15,14 +16,14 @@ export default function Projects() {
         }}
       >
         <Image
-          src="/images/projects-bg-1200.png"
+          src="/images/projects-bg-1440.png"
           alt="Projects bg"
           className={styles.imgSmall}
           priority={true}
           fill={true}
         />
         <Image
-          src="/images/about-bg-1920.png"
+          src="/images/projects-bg-1920.png"
           alt="Projects bg"
           className={styles.imgLarge}
           priority={true}
@@ -39,7 +40,7 @@ export default function Projects() {
             position: 'relative',
           }}
         >
-          <div style={{ bottom: '100px', left: '150px', position: 'absolute' }}>
+          <div style={{ bottom: '100px', left: '120px', position: 'absolute' }}>
             <p className={styles.heading}>Our Projects</p>
             <p className={styles.text}>
               Explore our portfolio of successful projects,
@@ -50,7 +51,7 @@ export default function Projects() {
           <div
             style={{
               bottom: '90px',
-              right: '150px',
+              right: '120px',
               position: 'absolute',
               display: 'flex',
               alignItems: 'center',
@@ -62,7 +63,9 @@ export default function Projects() {
             <ScrollIcon />
           </div>
         </div>
+        <div className={styles.shadow}></div>
       </div>
+      <ProjectsSection />
     </section>
   );
 }
