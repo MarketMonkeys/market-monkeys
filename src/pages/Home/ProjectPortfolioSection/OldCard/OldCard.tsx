@@ -82,13 +82,13 @@ const OldCard = ({
           isEvenIndex
             ? {
                 paddingLeft: '22px',
-                borderTopLeftRadius: '0',
-                borderBottomLeftRadius: '0px',
+                borderTopLeftRadius: 0,
+                borderBottomLeftRadius: 0,
               }
             : {
                 paddingRight: '22px',
-                borderTopRightRadius: '0',
-                borderBottomRightRadius: '0px',
+                borderTopRightRadius: 0,
+                borderBottomRightRadius: 0,
               }
         }
       >
