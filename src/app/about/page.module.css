@@ -2,8 +2,19 @@
   display: none;
 }
 
+.imgSmall {
+  object-fit: cover;
+}
+
+.shadow {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, #0a0a0a 100%);
+}
+
 .contentImgWrapper {
-  height: calc(770px - 100px);
+  height: calc(100vh - 100px);
   position: relative;
   width: 100%;
   z-index: 1;
@@ -21,18 +32,19 @@
 
 .text {
   color: var(--white);
-font-size: var(--text-main-font);
-font-style: normal;
-font-weight: var(--text-main-font-weight);
-line-height: 22px;
+  font-size: var(--text-main-font);
+  font-style: normal;
+  font-weight: var(--text-main-font-weight);
+  line-height: 22px;
 }
 
-@media screen and (width >= 1920px) {
+@media screen and (min-width: 1920px) {
   .imgSmall {
     display: none;
   }
 
   .imgLarge {
+    object-fit: cover;
     display: block;
   }
 }

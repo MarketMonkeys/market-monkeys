@@ -1,13 +1,13 @@
-"use client";
-import Image from "next/image";
-import Slider, { Settings } from "react-slick";
-import styles from "./CarouselSection.module.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+'use client';
+import Image from 'next/image';
+import Slider, { Settings } from 'react-slick';
+import styles from './CarouselSection.module.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const settings: Settings = {
   centerMode: true,
-  centerPadding: "0px",
+  centerPadding: '0px',
   autoplay: true,
   dots: false,
   arrows: false,
@@ -23,7 +23,7 @@ const CarouselSection = () => {
       <div className={styles.sliderSlide}>
         <Image
           src="/images/about-page-carousel.png"
-          alt={"test"}
+          alt={'test'}
           width={180}
           height={138}
           draggable="false"
@@ -32,7 +32,7 @@ const CarouselSection = () => {
       <div className={styles.sliderSlide}>
         <Image
           src="/images/about-page-carousel.png"
-          alt={"test"}
+          alt={'test'}
           width={180}
           height={138}
           draggable="false"
@@ -41,7 +41,7 @@ const CarouselSection = () => {
       <div className={styles.sliderSlide}>
         <Image
           src="/images/about-page-carousel.png"
-          alt={"test"}
+          alt={'test'}
           width={180}
           height={138}
           draggable="false"
@@ -50,7 +50,7 @@ const CarouselSection = () => {
       <div className={styles.sliderSlide}>
         <Image
           src="/images/about-page-carousel.png"
-          alt={"test"}
+          alt={'test'}
           width={180}
           height={138}
           draggable="false"
@@ -59,7 +59,7 @@ const CarouselSection = () => {
       <div className={styles.sliderSlide}>
         <Image
           src="/images/about-page-carousel.png"
-          alt={"test"}
+          alt={'test'}
           width={180}
           height={138}
           draggable="false"
@@ -68,7 +68,7 @@ const CarouselSection = () => {
       <div className={styles.sliderSlide}>
         <Image
           src="/images/about-page-carousel.png"
-          alt={"test"}
+          alt={'test'}
           width={180}
           height={138}
           draggable="false"

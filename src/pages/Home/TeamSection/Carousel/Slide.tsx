@@ -1,5 +1,5 @@
-import Image from "next/image";
-import styles from "./Carousel.module.css";
+import Image from 'next/image';
+import styles from './Carousel.module.css';
 
 interface SlideProps {
   src: string;
@@ -16,13 +16,13 @@ const Slide = ({ src, fullName, position }: SlideProps) => {
         width={384}
         height={384}
         draggable="false"
-        style={{ borderRadius: "10px", marginBottom: "10px" }}
+        style={{ borderRadius: '10px', marginBottom: '10px' }}
       />
       <div
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-end",
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'flex-end',
         }}
       >
         <h4 className={styles.slideHeading}>{fullName}</h4>

@@ -1,5 +1,5 @@
-import { HTMLAttributes } from "react";
-import styles from "./Card.module.css";
+import { HTMLAttributes } from 'react';
+import styles from './Card.module.css';
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
   title: string;
@@ -13,8 +13,8 @@ const Card = ({ title, icon: Icon, text, value, ...props }: CardProps) => {
     <div className={styles.card} {...props}>
       <div
         style={{
-          display: "flex",
-          justifyContent: "space-between",
+          display: 'flex',
+          justifyContent: 'space-between',
           //   alignItems: "center",
         }}
       >
@@ -23,9 +23,9 @@ const Card = ({ title, icon: Icon, text, value, ...props }: CardProps) => {
       </div>
       <div
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-end",
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'flex-end',
         }}
       >
         <p className={styles.text}>{text}</p>

@@ -1,6 +1,6 @@
-import { projectPortfolioSection } from "@/common/mocks/home";
-import styles from "./ProjectPortfolioSection.module.css";
-import OldCard from "./OldCard/OldCard";
+import { projectPortfolioSection } from '@/common/mocks/home';
+import styles from './ProjectPortfolioSection.module.css';
+import OldCard from './OldCard/OldCard';
 
 const ProjectPortfolioSection = () => {
   return (
@@ -29,7 +29,7 @@ const ProjectPortfolioSection = () => {
           title={"NFT Marketplace / Web3.0 Design"}
           subTitle={"Our Plan of Action"}
           text={
-            "Web Design | Web Development | SEO Strategy | Content Marketing"
+            'Web Design | Web Development | SEO Strategy | Content Marketing'
           }
           src={"/images/nft-marketplace.png"}
         /> */}

@@ -1,10 +1,10 @@
-"use client";
-import { useState } from "react";
-import DoneIcon from "@/components/Icons/DoneIcon";
-import styles from "./OldCard.module.css";
-import LinkButton from "@/components/LinkButton/LinkButton";
-import Image from "next/image";
-import { useSpring, animated, useChain, useSpringRef } from "@react-spring/web";
+'use client';
+import { useState } from 'react';
+import DoneIcon from '@/components/Icons/DoneIcon';
+import styles from './OldCard.module.css';
+import LinkButton from '@/components/LinkButton/LinkButton';
+import Image from 'next/image';
+import { useSpring, animated, useChain, useSpringRef } from '@react-spring/web';
 
 interface OldCardProps {
   title: string;
@@ -23,7 +23,7 @@ const OldCard = ({
   text,
   label,
   src,
-  srcHover
+  srcHover,
 }: OldCardProps) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   const isEvenIndex = index % 2 === 0;
@@ -33,13 +33,13 @@ const OldCard = ({
     ref: springRef,
     x: isHover ? (isEvenIndex ? -1000 : 1000) : 0,
     config: { duration: 500 },
-    delay: isHover ? 0 : 600
+    delay: isHover ? 0 : 600,
   });
   const springScaleRef = useSpringRef();
   const springsScale = useSpring({
     ref: springScaleRef,
     scale: isHover ? 0.8 : 1,
-    delay: isHover ? 0 : 600
+    delay: isHover ? 0 : 600,
   });
 
   const hoverSpringRef = useSpringRef();
@@ -47,14 +47,14 @@ const OldCard = ({
     ref: hoverSpringRef,
     x: isHover ? 0 : isEvenIndex ? -1000 : 1000,
     config: { duration: 500 },
-    delay: isHover ? 500 : 0
+    delay: isHover ? 500 : 0,
   });
   const hoverSpringScaleRef = useSpringRef();
   const hoverSpringsScale = useSpring({
     ref: hoverSpringScaleRef,
     scale: isHover ? 1 : 0.8,
     // y: isHover ? -30 : 0,
-    delay: isHover ? 500 : 0
+    delay: isHover ? 500 : 0,
   });
 
   useChain(isHover ? [springScaleRef, springRef] : [springRef, springScaleRef]);
@@ -75,14 +75,14 @@ const OldCard = ({
         style={
           isEvenIndex
             ? {
-                paddingLeft: "22px",
-                borderTopLeftRadius: "0",
-                borderBottomLeftRadius: "0px"
+                paddingLeft: '22px',
+                borderTopLeftRadius: '0',
+                borderBottomLeftRadius: '0px',
               }
             : {
-                paddingRight: "22px",
-                borderTopRightRadius: "0",
-                borderBottomRightRadius: "0px"
+                paddingRight: '22px',
+                borderTopRightRadius: '0',
+                borderBottomRightRadius: '0px',
               }
         }
       >
@@ -90,7 +90,7 @@ const OldCard = ({
           <h4 className={styles.heading}>{title}</h4>
           <span className={styles.index}>0{index}</span>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div className={styles.descriptionBlock}>
             <div className={styles.imgWrapper}>
               <DoneIcon />
@@ -102,7 +102,7 @@ const OldCard = ({
           <LinkButton
             variant="secondary"
             href="/"
-            style={{ alignSelf: "flex-end", height: "fit-content" }}
+            style={{ alignSelf: 'flex-end', height: 'fit-content' }}
           >
             Explore
           </LinkButton>
@@ -112,8 +112,8 @@ const OldCard = ({
         className={styles.imageWrapper}
         style={
           isEvenIndex
-            ? { paddingRight: "22px", textAlign: "left" }
-            : { paddingLeft: "22px", textAlign: "right" }
+            ? { paddingRight: '22px', textAlign: 'left' }
+            : { paddingLeft: '22px', textAlign: 'right' }
         }
       >
         <animated.div style={{ ...springs, ...springsScale }}>
