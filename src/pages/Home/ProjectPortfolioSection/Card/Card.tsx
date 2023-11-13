@@ -1,7 +1,7 @@
-import styles from "./Card.module.css";
-import LinkButton from "@/components/LinkButton/LinkButton";
-import Image from "next/image";
-import macbookCase from "public/images/macbook-case.svg";
+import styles from './Card.module.css';
+import LinkButton from '@/components/LinkButton/LinkButton';
+import Image from 'next/image';
+import macbookCase from 'public/images/macbook-case.svg';
 
 interface CardProps {
   title: string;
@@ -20,7 +20,7 @@ const Card = ({ title, subTitle, text, src }: CardProps) => {
           <p className={styles.text}>{text}</p>
         </div>
       </div>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: 'relative' }}>
         <Image src={macbookCase} alt="Macbook case" />
         <Image
           className={styles.image}

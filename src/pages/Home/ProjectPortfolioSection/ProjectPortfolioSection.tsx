@@ -1,6 +1,6 @@
 // import { projectPortfolioSection } from "@/common/mocks/home";
-import Card from "./Card/Card";
-import styles from "./ProjectPortfolioSection.module.css";
+import Card from './Card/Card';
+import styles from './ProjectPortfolioSection.module.css';
 
 const ProjectPortfolioSection = () => {
   return (
@@ -28,12 +28,12 @@ const ProjectPortfolioSection = () => {
         )} */}
 
         <Card
-          title={"NFT Marketplace / Web3.0 Design"}
-          subTitle={"Our Plan of Action"}
+          title={'NFT Marketplace / Web3.0 Design'}
+          subTitle={'Our Plan of Action'}
           text={
-            "Web Design | Web Development | SEO Strategy | Content Marketing"
+            'Web Design | Web Development | SEO Strategy | Content Marketing'
           }
-          src={"/images/nft-marketplace.png"}
+          src={'/images/nft-marketplace.png'}
         />
       </div>
     </section>

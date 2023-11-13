@@ -1,7 +1,7 @@
-import DoneIcon from "@/components/Icons/DoneIcon";
-import styles from "./OldCard.module.css";
-import LinkButton from "@/components/LinkButton/LinkButton";
-import Image from "next/image";
+import DoneIcon from '@/components/Icons/DoneIcon';
+import styles from './OldCard.module.css';
+import LinkButton from '@/components/LinkButton/LinkButton';
+import Image from 'next/image';
 
 interface OldCardProps {
   title: string;
@@ -26,13 +26,13 @@ const OldCard = ({
     <div className={styles.wrapper}>
       <div
         className={styles.cardWrapper}
-        style={{ order: isReversed ? "2" : "1" }}
+        style={{ order: isReversed ? '2' : '1' }}
       >
         <div className={styles.headingWrapper}>
           <h4 className={styles.heading}>{title}</h4>
           <span className={styles.index}>0{index}</span>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
           <div>
             <div className={styles.imgWrapper}>
               <DoneIcon />
@@ -44,7 +44,7 @@ const OldCard = ({
           <LinkButton
             variant="secondary"
             href="/"
-            style={{ alignSelf: "flex-end", height: "fit-content" }}
+            style={{ alignSelf: 'flex-end', height: 'fit-content' }}
           >
             Explore
           </LinkButton>
@@ -52,9 +52,9 @@ const OldCard = ({
       </div>
       <div
         style={{
-          order: isReversed ? "1" : "2",
-          overflow: "hidden",
-          borderRadius: "10px",
+          order: isReversed ? '1' : '2',
+          overflow: 'hidden',
+          borderRadius: '10px',
         }}
       >
         <Image

@@ -1,13 +1,13 @@
-"use client";
-import Slider, { Settings } from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slide from "./Slide";
-import styles from "./Carousel.module.css";
-import { useRef } from "react";
-import ButtonArrow from "@/components/ButtonArrow/ButtonArrow";
-import ArrowLeftIcon from "@/components/Icons/ArrowLeftIcon";
-import ArrowRightIcon from "@/components/Icons/ArrowRightIcon";
+'use client';
+import Slider, { Settings } from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slide from './Slide';
+import styles from './Carousel.module.css';
+import { useRef } from 'react';
+import ButtonArrow from '@/components/ButtonArrow/ButtonArrow';
+import ArrowLeftIcon from '@/components/Icons/ArrowLeftIcon';
+import ArrowRightIcon from '@/components/Icons/ArrowRightIcon';
 
 const settings: Settings = {
   dots: false,
@@ -32,12 +32,12 @@ const Carousel = () => {
   };
 
   return (
-    <div style={{ marginBottom: "120px" }}>
+    <div style={{ marginBottom: '120px' }}>
       <div
         style={{
-          marginBottom: "80px",
-          textAlign: "center",
-          position: "relative",
+          marginBottom: '80px',
+          textAlign: 'center',
+          position: 'relative',
         }}
       >
         <h2 className={styles.heading}>meet our team</h2>
@@ -50,7 +50,7 @@ const Carousel = () => {
           </ButtonArrow>
         </div>
       </div>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: 'flex' }}>
         <div className={styles.teamWrapper}>
           <h3 className={styles.subheading}>
             Market Monkeys <br /> Team
@@ -64,18 +64,18 @@ const Carousel = () => {
         </div>
         <Slider {...settings} className={styles.slider} ref={ref}>
           <Slide
-            src="/images/nikita.png"
-            fullName="Nikita Osaulenko"
+            src="/images/our-team.png"
+            fullName="Oliver Smith"
             position="Chief Executive Officer"
           />
           <Slide
-            src="/images/nikita.png"
-            fullName="Nikita Osaulenko"
+            src="/images/our-team.png"
+            fullName="Oliver Smith"
             position="Chief Executive Officer"
           />
           <Slide
-            src="/images/nikita.png"
-            fullName="Nikita Osaulenko"
+            src="/images/our-team.png"
+            fullName="Oliver Smith"
             position="Chief Executive Officer"
           />
         </Slider>

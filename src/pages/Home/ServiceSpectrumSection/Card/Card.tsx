@@ -1,5 +1,5 @@
-import { HTMLAttributes } from "react";
-import styles from "./Card.module.css";
+import { HTMLAttributes } from 'react';
+import styles from './Card.module.css';
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
   title: string;
@@ -11,7 +11,7 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 const Card = ({ title, isActive, icon: Icon, text, ...props }: CardProps) => {
   return (
     <div
-      className={`${styles.card} ${isActive ? styles.active : ""}`}
+      className={`${styles.card} ${isActive ? styles.active : ''}`}
       {...props}
     >
       <div className={styles.wrapper}>

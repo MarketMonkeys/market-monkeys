@@ -17,3 +17,8 @@
 .link:focus {
   background: #ff6614;
 }
+
+.activeLink {
+  outline: var(--white) solid 1px;
+  transition: all 0.4s;
+}

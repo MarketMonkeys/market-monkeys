@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes, ReactNode } from "react";
-import styles from "./ButtonArrow.module.css";
+import { ButtonHTMLAttributes, ReactNode } from 'react';
+import styles from './ButtonArrow.module.css';
 
 interface ButtonArrowProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;

@@ -1,17 +1,17 @@
-import styles from "./DigitalMarketingSection.module.css";
-import { wordGroups } from "@/common/mocks/home";
-import Image from "next/image";
+import styles from './DigitalMarketingSection.module.css';
+import { wordGroups } from '@/common/mocks/home';
+import Image from 'next/image';
 
 const DigitalMarketingSection = () => {
   return (
-    <section style={{ position: "relative" }}>
-      <ul style={{ padding: "20px 0 40px", overflowX: "hidden" }}>
+    <section style={{ position: 'relative', height: 'calc(100vh - 150px)' }}>
+      <ul style={{ padding: '20px 0 40px', overflowX: 'hidden' }}>
         {wordGroups.map((group, groupIndex) => (
           <li
             key={groupIndex}
-            style={{ textAlign: "center", whiteSpace: "nowrap" }}
+            style={{ textAlign: 'center', whiteSpace: 'nowrap' }}
           >
-            {group.words.split("#").map((word, wordIndex) => (
+            {group.words.split('#').map((word, wordIndex) => (
               <span
                 key={wordIndex}
                 className={`${styles.word} ${styles[group.colors[wordIndex]]}`}
