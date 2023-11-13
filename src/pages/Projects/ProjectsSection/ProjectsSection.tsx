@@ -38,6 +38,9 @@ const ProjectsSection = () => {
           }
         )}
       </div>
+      {/* <LinkButton href="/projects" size="l" style={{ margin: '0 auto' }}>
+        LOAD MORE PROJECTS
+      </LinkButton> */}
       <button className={styles.button}>load more projects</button>
     </section>
   );
