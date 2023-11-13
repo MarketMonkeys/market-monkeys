@@ -1,6 +1,6 @@
 import { projectPortfolioSection } from '@/common/mocks/home';
 import styles from './ProjectPortfolioSection.module.css';
-import OldCard from './OldCard/OldCard';
+import Card from './Card/Card';
 
 const ProjectPortfolioSection = () => {
   return (
@@ -11,7 +11,7 @@ const ProjectPortfolioSection = () => {
           ({ title, subtitle, label, text, src, srcHover }, index) => {
             const cardIndex = index + 1;
             return (
-              <OldCard
+              <Card
                 key={src + cardIndex}
                 title={title}
                 index={cardIndex}
