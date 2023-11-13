@@ -9,6 +9,12 @@
 
 .wrapper {
   padding: 120px 0;
-  max-width: 1240px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.cardsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }

@@ -1,71 +1,41 @@
-import DoneIcon from '@/components/Icons/DoneIcon';
 import styles from './OldCard.module.css';
 import LinkButton from '@/components/LinkButton/LinkButton';
 import Image from 'next/image';
+import macbookCase from 'public/images/macbook-case.svg';
 
 interface OldCardProps {
   title: string;
-  index: number;
-  subtitle: string;
+  subTitle: string;
   text: string;
   src: string;
-  label?: string;
-  isReversed: boolean;
 }
 
-const OldCard = ({
-  title,
-  index,
-  subtitle,
-  text,
-  label,
-  src,
-  isReversed,
-}: OldCardProps) => {
+const OldCard = ({ title, subTitle, text, src }: OldCardProps) => {
   return (
     <div className={styles.wrapper}>
-      <div
-        className={styles.cardWrapper}
-        style={{ order: isReversed ? '2' : '1' }}
-      >
-        <div className={styles.headingWrapper}>
-          <h4 className={styles.heading}>{title}</h4>
-          <span className={styles.index}>0{index}</span>
-        </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <div>
-            <div className={styles.imgWrapper}>
-              <DoneIcon />
-            </div>
-            <h5 className={styles.subtitle}>{subtitle}</h5>
-            <p className={styles.text}>{text}</p>
-            {label && <span className={styles.label}>{label}</span>}
-          </div>
-          <LinkButton
-            variant="secondary"
-            href="/"
-            style={{ alignSelf: 'flex-end', height: 'fit-content' }}
-          >
-            Explore
-          </LinkButton>
+      <div className={styles.titleBlock}>
+        <h4 className={styles.title}>{title}</h4>
+        <div>
+          <h5 className={styles.subTitle}>{subTitle}</h5>
+          <p className={styles.text}>{text}</p>
         </div>
       </div>
-      <div
-        style={{
-          order: isReversed ? '1' : '2',
-          overflow: 'hidden',
-          borderRadius: '10px',
-        }}
-      >
+      <div style={{ position: 'relative' }}>
+        <Image src={macbookCase} alt="Macbook case" />
         <Image
-          draggable={false}
-          src={src}
-          width={588}
-          height={330}
-          alt={`${title} image`}
           className={styles.image}
-          quality={100}
+          src={src}
+          alt="Macbook screen image"
+          width={471}
+          height={307}
         />
+      </div>
+      <div className={styles.platformBlock}>
+        <span className={styles.platform}>Desktop</span>
+
+        <LinkButton variant="secondary" href="/">
+          Explore
+        </LinkButton>
       </div>
     </div>
   );

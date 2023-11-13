@@ -1,17 +1,15 @@
-// import { projectPortfolioSection } from "@/common/mocks/home";
-import Card from './Card/Card';
+import { projectPortfolioSection } from '@/common/mocks/home';
 import styles from './ProjectPortfolioSection.module.css';
+import Card from './Card/Card';
 
 const ProjectPortfolioSection = () => {
   return (
     <section className={styles.wrapper}>
       <h2 className={styles.heading}>Project Portfolio</h2>
-      <div>
-        {/* {projectPortfolioSection.map(
-          ({ title, subtitle, label, text, src }, index) => {
+      <div className={styles.cardsWrapper}>
+        {projectPortfolioSection.map(
+          ({ title, subtitle, label, text, src, srcHover }, index) => {
             const cardIndex = index + 1;
-            const isReversed = cardIndex % 2 === 0;
-
             return (
               <Card
                 key={src + cardIndex}
@@ -21,20 +19,20 @@ const ProjectPortfolioSection = () => {
                 text={text}
                 label={label}
                 src={src}
-                isReversed={isReversed}
+                srcHover={srcHover}
               />
             );
           }
-        )} */}
+        )}
 
-        <Card
-          title={'NFT Marketplace / Web3.0 Design'}
-          subTitle={'Our Plan of Action'}
+        {/* <Card
+          title={"NFT Marketplace / Web3.0 Design"}
+          subTitle={"Our Plan of Action"}
           text={
             'Web Design | Web Development | SEO Strategy | Content Marketing'
           }
-          src={'/images/nft-marketplace.png'}
-        />
+          src={"/images/nft-marketplace.png"}
+        /> */}
       </div>
     </section>
   );

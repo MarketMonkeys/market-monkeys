@@ -101,36 +101,51 @@ export const wordGroups = [
   },
   {
     words:
-      'Smm#seo strategy#illustration#posts#writing#ups#brand identity#prototyping#creatives',
-    colors: [
-      'green',
-      'white',
-      'orange',
-      'white',
-      'blue',
-      'white',
-      'blue',
-      'white',
-      'orange',
-    ],
-  },
-  {
-    words:
       'Facebook ads#packing#creatives#stories#content#web design#development#analytics',
     colors: [
-      'blue',
-      'white',
-      'white',
       'green',
       'white',
       'orange',
       'white',
       'blue',
+      'white',
+      'blue',
+      'white',
+      'orange',
     ],
   },
   {
     words:
       'brand#website#Smm#brand#writing#automation tools#content#PPC#branding#mock ups',
+    colors: [
+      'blue',
+      'white',
+      'white',
+      'green',
+      'white',
+      'orange',
+      'white',
+      'blue',
+    ],
+  },
+  {
+    words:
+      'web#storytelling#email-marketing#rebranding#content writing#Instagram ads#front-end',
+    colors: ['green', 'white', 'orange', 'white', 'green', 'white', 'blue'],
+  },
+  {
+    words:
+      'creatives#illustration#visual#automation tools#content plan#retarget#product design',
+    colors: ['white', 'green', 'white', 'blue', 'white', 'orange', 'white'],
+  },
+  {
+    words:
+      'photo processing#front-end#email-marketing#development#rebranding#content plan#posts#',
+    colors: ['blue', 'white', 'orange', 'white', 'blue', 'white', 'green'],
+  },
+  {
+    words:
+      'strategy#audit#banners#analytics#automation tools#photo processing#web#Facebook ads',
     colors: [
       'orange',
       'white',
@@ -156,42 +171,32 @@ export const wordGroups = [
   },
   {
     words:
-      'photo processing#front-end#email-marketing#development#rebranding#content plan#posts#',
-    colors: ['blue', 'white', 'orange', 'white', 'blue', 'white', 'green'],
+      'front-end#posts#email-marketing#rebranding#content plan#content plan#photo processing',
+    colors: ['blue', 'white', 'orange', 'blue', 'white', 'green'],
   },
   {
     words:
-      'strategy#audit#banners#analytics#automation tools#photo processing#web#Facebook ads',
+      'audit#banners#web#content writing#storytelling#mock ups#content plan',
+    colors: ['orange', 'white', 'green', 'white', 'orange', 'white', 'blue'],
+  },
+  {
+    words:
+      'brand identity#ppc#branding#front-end#prototyping#website#posts#prototyping',
     colors: [
-      'white',
-      'orange',
       'white',
       'blue',
       'white',
+      'orange',
       'green',
       'white',
       'blue',
+      'white',
     ],
   },
   {
     words:
-      'mock ups#product design#Facebook ads#analytics#metrics#content writing#rebranding',
-    colors: ['green', 'white', 'green', 'white', 'blue', 'white', 'white'],
-  },
-  {
-    words:
-      'storytelling#mock ups#audit#banners#web#content writing#retarget#strategy#content plan',
-    colors: [
-      'orange',
-      'white',
-      'green',
-      'white',
-      'blue',
-      'white',
-      'orange',
-      'white',
-      'green',
-    ],
+      'content#ppc#content plan#Facebook ads#photo processing#Web development#SEO',
+    colors: ['blue', 'white', 'orange', 'green', 'white', 'orange', 'white'],
   },
 ];
 
@@ -236,6 +241,7 @@ export const projectPortfolioSection = [
     text: 'Web Design | Web Development | SEO Strategy',
     label: 'Content Marketing',
     src: '/images/nft-marketplace.png',
+    srcHover: '/images/nft-marketplace_hover.png',
   },
   {
     title: 'Fotballer | UI/UX',
@@ -243,12 +249,14 @@ export const projectPortfolioSection = [
     text: 'Content-Marketing | Email-Marketing',
     label: 'Prototyping',
     src: '/images/footballer.png',
+    srcHover: '/images/footballer_hover.png',
   },
   {
     title: 'Space Academy | Social Media',
     subtitle: 'Our Plan of Action',
     text: 'SMM | Key-Visual | Retarget | Facebook Ads',
     src: '/images/space-academy.png',
+    srcHover: '/images/space-academy_hover.png',
   },
   {
     title: 'Trifecta | Document Assistant Website | UI/UX',
@@ -256,5 +264,6 @@ export const projectPortfolioSection = [
     text: 'SEO Strategy | PPC | Email-Marketing',
     label: 'Automation Tools',
     src: '/images/trifecta.png',
+    srcHover: '/images/trifecta_hover.png',
   },
 ];
