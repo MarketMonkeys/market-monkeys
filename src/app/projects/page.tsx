@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import ScrollIcon from '@/components/Icons/ScrollIcon';
 import ProjectsSection from '@/pages/Projects/ProjectsSection/ProjectsSection';
+import ReviewsSection from '@/pages/Projects/ReviewsSection/ReviewsSection';
 
 export default function Projects() {
   return (
@@ -66,6 +67,7 @@ export default function Projects() {
         <div className={styles.shadow}></div>
       </div>
       <ProjectsSection />
+      <ReviewsSection />
     </section>
   );
 }

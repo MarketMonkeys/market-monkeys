@@ -49,3 +49,30 @@ export const projectsSection = [
     srcHover: '/images/you_hover.png',
   },
 ];
+
+export const REVIEWS = [
+  {
+    fullName: 'Dan Davidson',
+    review:
+      "Market Monkeys has been a game-changer for my business. Their marketing expertise and strategies have not only increased our online visibility but also driven a significant boost in sales. The team is incredibly responsive and attentive to our specific needs. I couldn't be happier with the results they've achieved for us.",
+    project: 'Fotballer | UI/UX',
+    rating: 5,
+    src: '/images/footballer_case.png',
+  },
+  {
+    fullName: 'Dan Davidson',
+    review:
+      "Market Monkeys has been a game-changer for my business. Their marketing expertise and strategies have not only increased our online visibility but also driven a significant boost in sales. The team is incredibly responsive and attentive to our specific needs. I couldn't be happier with the results they've achieved for us.",
+    project: 'Le Syndicat | UI/UX design',
+    rating: 4,
+    src: '/images/le-syndicat_case.png',
+  },
+  {
+    fullName: 'Yuliia Trach',
+    review:
+      "Market Monkeys has been a game-changer for my business. Their marketing expertise and strategies have not only increased our online visibility but also driven a significant boost in sales. The team is incredibly responsive and attentive to our specific needs. I couldn't be happier with the results they've achieved for us.",
+    project: 'Space Academy | Social Media',
+    rating: 5,
+    src: '/images/space-academy_case.png',
+  },
+];
