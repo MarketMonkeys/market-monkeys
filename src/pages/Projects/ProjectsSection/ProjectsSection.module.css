@@ -66,3 +66,14 @@
   font-weight: var(--text-button-main-font-weight);
   transition: all 0.5s;
 }
+
+.button:hover {
+  background: #ff955c;
+  color: var(--white);
+}
+
+.button:disabled {
+  background: #c8c8c8;
+  color: #808080;
+  cursor: default;
+}

@@ -48,6 +48,23 @@ export const projectsSection = [
     src: '/images/you.png',
     srcHover: '/images/projects/you_hover.png',
   },
+  ////
+  {
+    title: 'NFT Marketplace | Web3.0 Design',
+    subtitle: 'Our Plan of Action',
+    text: 'Web Design | Web Development | SEO Strategy',
+    label: 'Content Marketing',
+    src: '/images/nft-marketplace.png',
+    srcHover: '/images/projects/nft-marketplace_hover.png',
+  },
+  {
+    title: 'Fotballer | UI/UX',
+    subtitle: 'Our Plan of Action',
+    text: 'Content-Marketing | Email-Marketing',
+    label: 'Prototyping',
+    src: '/images/footballer.png',
+    srcHover: '/images/projects/footballer_hover.png',
+  },
 ];
 
 export const REVIEWS = [
