@@ -7,7 +7,7 @@ export const projectsSection = [
     text: 'Web Design | Web Development | SEO Strategy',
     label: 'Content Marketing',
     src: '/images/nft-marketplace.png',
-    srcHover: '/images/nft-marketplace_hover.png',
+    srcHover: '/images/projects/nft-marketplace_hover.png',
   },
   {
     title: 'Fotballer | UI/UX',
@@ -15,14 +15,14 @@ export const projectsSection = [
     text: 'Content-Marketing | Email-Marketing',
     label: 'Prototyping',
     src: '/images/footballer.png',
-    srcHover: '/images/footballer_hover.png',
+    srcHover: '/images/projects/footballer_hover.png',
   },
   {
     title: 'Space Academy | Social Media',
     subtitle: 'Our Plan of Action',
     text: 'SMM | Key-Visual | Retarget | Facebook Ads',
     src: '/images/space-academy.png',
-    srcHover: '/images/space-academy_hover.png',
+    srcHover: '/images/projects/space-academy_hover.png',
   },
   {
     title: 'Trifecta | Document Assistant Website | UI/UX',
@@ -30,7 +30,7 @@ export const projectsSection = [
     text: 'SEO Strategy | PPC | Email-Marketing',
     label: 'Automation Tools',
     src: '/images/trifecta.png',
-    srcHover: '/images/trifecta_hover.png',
+    srcHover: '/images/projects/trifecta_hover.png',
   },
   {
     title: 'Le Syndicat | UI/UX design',
@@ -38,7 +38,7 @@ export const projectsSection = [
     text: 'SMM Strategy | Re-branding | Brand Identity',
     label: 'Analytics and Metrics of Competitors',
     src: '/images/le-syndicat.png',
-    srcHover: '/images/le-syndicat_hover.png',
+    srcHover: '/images/projects/le-syndicat_hover.png',
   },
   {
     title: 'You2.0 Beauty Studio',
@@ -46,7 +46,7 @@ export const projectsSection = [
     text: 'SMM Strategy | Brand Identity | LOGO | Facebook Ads',
     label: 'Analytics and Metrics of Competitors',
     src: '/images/you.png',
-    srcHover: '/images/you_hover.png',
+    srcHover: '/images/projects/you_hover.png',
   },
 ];
 
@@ -57,7 +57,7 @@ export const REVIEWS = [
       "Market Monkeys has been a game-changer for my business. Their marketing expertise and strategies have not only increased our online visibility but also driven a significant boost in sales. The team is incredibly responsive and attentive to our specific needs. I couldn't be happier with the results they've achieved for us.",
     project: 'Fotballer | UI/UX',
     rating: 5,
-    src: '/images/footballer_case.png',
+    src: '/images/projects/footballer_case.png',
   },
   {
     fullName: 'Dan Davidson',
@@ -65,7 +65,7 @@ export const REVIEWS = [
       "Market Monkeys has been a game-changer for my business. Their marketing expertise and strategies have not only increased our online visibility but also driven a significant boost in sales. The team is incredibly responsive and attentive to our specific needs. I couldn't be happier with the results they've achieved for us.",
     project: 'Le Syndicat | UI/UX design',
     rating: 4,
-    src: '/images/le-syndicat_case.png',
+    src: '/images/projects/le-syndicat_case.png',
   },
   {
     fullName: 'Yuliia Trach',
@@ -73,6 +73,6 @@ export const REVIEWS = [
       "Market Monkeys has been a game-changer for my business. Their marketing expertise and strategies have not only increased our online visibility but also driven a significant boost in sales. The team is incredibly responsive and attentive to our specific needs. I couldn't be happier with the results they've achieved for us.",
     project: 'Space Academy | Social Media',
     rating: 5,
-    src: '/images/space-academy_case.png',
+    src: '/images/projects/space-academy_case.png',
   },
 ];
