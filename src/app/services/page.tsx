@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import ScrollIcon from '@/components/Icons/ScrollIcon';
 import MarketingSolutionsSection from '@/pages/Services/MarketingSolutionsSection/MarketingSolutionsSection';
+import WorkflowStagesSection from '@/pages/Services/WorkflowStagesSection/WorkflowStagesSection';
 
 export default function Services() {
   return (
@@ -82,6 +83,7 @@ export default function Services() {
         ></div>
       </div>
       <MarketingSolutionsSection />
+      <WorkflowStagesSection />
     </section>
   );
 }

@@ -1,3 +1,7 @@
+import BrandIcon from '@/components/Icons/BrandIcon';
+import WebIcon from '@/components/Icons/WebIcon';
+import AuditIcon from '@/components/Icons/AuditIcon';
+
 export const MARKETING_SOLUTIONS = [
   {
     title: 'Seo',
@@ -48,5 +52,23 @@ export const MARKETING_SOLUTIONS = [
     tags: ['Website Audit', 'Automation Tools'],
     tagColor: 'orange',
     src: '/images/services/audit.png',
+  },
+];
+
+export const WORKFLOW_STAGES = [
+  {
+    icon: <BrandIcon />,
+    title: 'Creating of concept',
+    text: 'During this phase, we brainstorm ideas, gather inspiration, and conceptualize the creative direction for your project.',
+  },
+  {
+    icon: <WebIcon />,
+    title: 'Design and Prototyping',
+    text: 'We translate concepts into visual designs, create prototypes, and refine them until we achieve the desired look and feel.',
+  },
+  {
+    icon: <AuditIcon />,
+    title: 'Development and Production',
+    text: 'During this phase, we brainstorm ideas, gather inspiration, and conceptualize the creative direction for your project.',
   },
 ];
