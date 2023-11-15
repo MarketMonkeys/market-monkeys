@@ -34,7 +34,7 @@ const Card = ({ title, text, tags, tagColor, src }: CardProps) => {
           draggable={false}
           src={src}
           fill
-          objectFit="contain"
+          style={{ objectFit: 'contain' }}
           alt={`${title} image`}
           quality={100}
         />
