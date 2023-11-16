@@ -17,7 +17,10 @@ const Card = ({ title, text, tags, tagColor, src }: CardProps) => {
         <div style={{ marginTop: '20px', marginBottom: '30px' }}>
           <p className={styles.text}>{text}</p>
         </div>
-        <div className={styles.tagsWrapper}>
+        <div
+          className={styles.tagsWrapper}
+          style={{ flexDirection: tags.length === 2 ? 'column' : 'row' }}
+        >
           {tags &&
             !!tags.length &&
             tags.map((tag, index) => (

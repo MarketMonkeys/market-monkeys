@@ -37,6 +37,7 @@
 .tag {
   padding: 11px 22px;
   border-radius: 100px;
+  width: fit-content;
   cursor: default;
   transition: all 0.5s;
 }
