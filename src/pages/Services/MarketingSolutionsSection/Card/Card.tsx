@@ -18,15 +18,17 @@ const Card = ({ title, text, tags, tagColor, src }: CardProps) => {
           <p className={styles.text}>{text}</p>
         </div>
         <div className={styles.tagsWrapper}>
-          {tags.map((tag, index) => (
-            <div
-              className={styles.tag}
-              style={{ backgroundColor: `var(--${tagColor})` }}
-              key={tag + index}
-            >
-              <span className={styles.text}>{tag}</span>
-            </div>
-          ))}
+          {tags &&
+            !!tags.length &&
+            tags.map((tag, index) => (
+              <div
+                className={styles.tag}
+                style={{ backgroundColor: `var(--${tagColor})` }}
+                key={tag + index}
+              >
+                <span className={styles.text}>{tag}</span>
+              </div>
+            ))}
         </div>
       </div>
       <div className={styles.imageWrapper}>
