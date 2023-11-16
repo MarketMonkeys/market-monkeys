@@ -19,7 +19,9 @@ const Card = ({ title, text, tags, tagColor, src }: CardProps) => {
         </div>
         <div
           className={styles.tagsWrapper}
-          style={{ flexDirection: tags.length === 2 ? 'column' : 'row' }}
+          style={{
+            flexDirection: tags && tags.length === 2 ? 'column' : 'row',
+          }}
         >
           {tags &&
             !!tags.length &&
