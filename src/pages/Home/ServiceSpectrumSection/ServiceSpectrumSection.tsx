@@ -53,7 +53,7 @@ const ServiceSpectrumSection = () => {
           ))}
         </div>
       </div>
-      <LinkButton href="/" size="l" style={{ margin: '0 auto' }}>
+      <LinkButton href="/services" size="l" style={{ margin: '0 auto' }}>
         VIEW ALL SERVICES
       </LinkButton>
     </section>
