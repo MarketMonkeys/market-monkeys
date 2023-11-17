@@ -41,7 +41,14 @@ export default function Projects() {
             position: 'relative',
           }}
         >
-          <div style={{ bottom: '100px', left: '120px', position: 'absolute' }}>
+          <div
+            style={{
+              bottom: '100px',
+              left: '120px',
+              position: 'absolute',
+              zIndex: 2,
+            }}
+          >
             <p className={styles.heading}>Our Projects</p>
             <p className={styles.text}>
               Explore our portfolio of successful projects,
@@ -56,6 +63,7 @@ export default function Projects() {
               position: 'absolute',
               display: 'flex',
               alignItems: 'center',
+              zIndex: 2,
             }}
           >
             <p style={{ marginRight: '10px' }} className={styles.text}>
