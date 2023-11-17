@@ -1,13 +1,13 @@
 'use client';
 import { useState } from 'react';
 import DoneIcon from '@/components/Icons/DoneIcon';
-import styles from './Card.module.css';
+import styles from './ProjectCard.module.css';
 import LinkButton from '@/components/LinkButton/LinkButton';
 import Image from 'next/image';
 import { useSpring, animated, useChain, useSpringRef } from '@react-spring/web';
 import { useDebounce } from '@/hooks/useDebounce';
 
-interface CardProps {
+interface ProjectCardProps {
   title: string;
   index: number;
   subtitle: string;
@@ -17,7 +17,7 @@ interface CardProps {
   label?: string;
 }
 
-const Card = ({
+const ProjectCard = ({
   title,
   index,
   subtitle,
@@ -25,7 +25,7 @@ const Card = ({
   label,
   src,
   srcHover,
-}: CardProps) => {
+}: ProjectCardProps) => {
   const [isHover, setIsHover] = useState<boolean>(false);
   const FIVE_HUNDRED_MS: number = 500;
   const debouncedValue = useDebounce<boolean>(isHover, FIVE_HUNDRED_MS);
@@ -150,4 +150,4 @@ const Card = ({
   );
 };
 
-export default Card;
+export default ProjectCard;

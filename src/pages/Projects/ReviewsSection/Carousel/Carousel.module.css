@@ -1,0 +1,109 @@
+.slider :global(.slick-slide) {
+  padding: 20px 0;
+}
+
+/* .slider :global(.slick-slide[aria-hidden="true"]) {
+  opacity: .2;
+} */
+
+.heading {
+  font-weight: var(--h2-headline-font-weight);
+  font-size: var(--h2-headline-font);
+  color: var(--white);
+  line-height: 60px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 47px;
+  margin-top: 40px;
+}
+
+.slideWrapper {
+  position: relative;
+  width: 792px;
+  height: 360px;
+  display: flex;
+  justify-content: right;
+  overflow-y: visible;
+  margin: 0 63px;
+}
+
+.slideImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.slideCard {
+  width: fit-content;
+  background: var(--white);
+  backdrop-filter: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 30px 22px;
+  border-radius: 0 10px 10px 0;
+}
+
+.slideHeading {
+  font-weight: var(--h3-headline-font-weight);
+  font-size: var(--h3-headline-font);
+  color: var(--black);
+  line-height: 40px;
+}
+.slideQuote {
+  font-weight: var(--h3-headline-font-weight);
+  font-size: var(--h3-headline-font);
+  color: var(--black);
+  opacity: 0.2;
+}
+
+.slideText {
+  font-weight: var(--text-main-font-weight);
+  font-size: var(--text-main-font);
+  color: var(--black);
+  line-height: 22px;
+  width: 456px;
+}
+
+.slideFooterText {
+  display: flex;
+  gap: 10px;
+  margin-top: 36px;
+  font-weight: var(--text-secondary-font-weight);
+  font-size: var(--text-secondary-font);
+  color: var(--black);
+  line-height: 20px;
+}
+
+.sliderDot {
+  width: 10px;
+  height: 10px;
+  opacity: 0.2;
+}
+
+.sliderActiveDot {
+  width: 14px;
+  height: 14px;
+}
+
+.slideActive {
+  position: absolute;
+  width: 832px;
+  height: 400px;
+  border-radius: 10px;
+  border: 1px solid rgba(252, 252, 252, 0.4);
+  background: rgba(252, 252, 252, 0.2);
+  z-index: -2;
+  top: -20px;
+  left: -20px;
+}
