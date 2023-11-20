@@ -107,7 +107,7 @@ const ProjectCard = ({
           </div>
           <LinkButton
             variant="secondary"
-            href="/"
+            href={`/projects/${title.split('|')[0].replace(' ', '')}`}
             style={{ alignSelf: 'flex-end', height: 'fit-content' }}
           >
             Explore
