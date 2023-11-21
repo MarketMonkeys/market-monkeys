@@ -27,11 +27,12 @@ const BlueBlockSection = ({ keyOutcomes }: BlueSectionProps) => {
             marginBottom: '120px',
           }}
         >
-          {keyOutcomes.map((item, index) => (
-            <li key={item.title + index} style={{ width: '588px' }}>
-              <Card {...item} />
-            </li>
-          ))}
+          {keyOutcomes &&
+            keyOutcomes.map((item, index) => (
+              <li key={item.title + index} style={{ width: '588px' }}>
+                <Card {...item} />
+              </li>
+            ))}
         </ul>
         <div style={{ marginBottom: '120px' }}>
           <h2 className={styles.heading}>more projects</h2>

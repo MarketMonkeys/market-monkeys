@@ -90,7 +90,7 @@ export default function Project({ params }: { params: { slug: string } }) {
         </div>
         <div className={styles.shadow}></div>
       </div>
-      <ProjectInfoSection {...project} />
+      {project && <ProjectInfoSection {...project} />}
       <BlueBlockSection keyOutcomes={project.keyOutcomes} />
     </section>
   );
