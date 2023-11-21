@@ -1,15 +1,48 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import ScrollIcon from '@/components/Icons/ScrollIcon';
-import ProjectsSection from '@/pages/Projects/ProjectsSection/ProjectsSection';
 import ReviewsSection from '@/pages/Projects/ReviewsSection/ReviewsSection';
+import { FULL_PROJECTS_INFO } from '@/common/mocks/project';
+import ProjectInfoSection from '@/pages/[Project]/ProjectsSection/ProjectInfoSection';
 
-export default function Project() {
+interface IKeyOutcome {
+  title: string;
+  content: string;
+  icon: JSX.Element;
+}
+interface IImage {
+  src: string;
+  width: number;
+  height: number;
+}
+
+interface IProject {
+  id: string;
+  mainImage: string;
+  label: string;
+  title: string;
+  year: number;
+  info: string[];
+  actions: {
+    title: string;
+    values: {
+      [key: string]: string;
+    };
+  };
+  images: IImage[][];
+  keyOutcomes: IKeyOutcome[];
+}
+
+export default function Project({ params }: { params: { slug: string } }) {
+  const project: IProject = FULL_PROJECTS_INFO.find(
+    ({ id }) => id === params.slug
+  )!;
+  const { label, mainImage } = project;
   return (
     <section>
       <div className={styles.background}>
         <Image
-          src="/images/case-bg.png"
+          src={mainImage}
           alt="Case bg"
           className={styles.img}
           priority={true}
@@ -35,7 +68,7 @@ export default function Project() {
               zIndex: 2,
             }}
           >
-            <p className={styles.text}>Le SynDicat Bar</p>
+            <p className={styles.text}>{label}</p>
           </div>
           <div
             style={{
@@ -55,7 +88,7 @@ export default function Project() {
         </div>
         <div className={styles.shadow}></div>
       </div>
-      <ProjectsSection />
+      <ProjectInfoSection {...project} />
       <ReviewsSection />
     </section>
   );
