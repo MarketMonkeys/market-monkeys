@@ -1,0 +1,18 @@
+.wrapper {
+  border-radius: 50px;
+  background: var(--blue);
+  width: 100%;
+  position: relative;
+  padding-top: 120px;
+}
+
+.heading {
+  font-size: var(--h2-headline-font);
+  font-style: normal;
+  font-weight: var(--h2-headline-font-weight);
+  line-height: 60px;
+  text-transform: uppercase;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 80px;
+}

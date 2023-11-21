@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import styles from './page.module.css';
 import ScrollIcon from '@/components/Icons/ScrollIcon';
-import ReviewsSection from '@/pages/Projects/ReviewsSection/ReviewsSection';
 import { FULL_PROJECTS_INFO } from '@/common/mocks/project';
 import ProjectInfoSection from '@/pages/[Project]/ProjectsSection/ProjectInfoSection';
+import BlueBlockSection from '@/pages/[Project]/BlueBlockSection/BlueBlockSection';
+import { notFound } from 'next/navigation';
 
 interface IKeyOutcome {
   title: string;
@@ -37,6 +38,7 @@ export default function Project({ params }: { params: { slug: string } }) {
   const project: IProject = FULL_PROJECTS_INFO.find(
     ({ id }) => id === params.slug
   )!;
+  if (!project) notFound();
   const { label, mainImage } = project;
   return (
     <section>
@@ -89,7 +91,7 @@ export default function Project({ params }: { params: { slug: string } }) {
         <div className={styles.shadow}></div>
       </div>
       <ProjectInfoSection {...project} />
-      <ReviewsSection />
+      <BlueBlockSection keyOutcomes={project.keyOutcomes} />
     </section>
   );
 }
