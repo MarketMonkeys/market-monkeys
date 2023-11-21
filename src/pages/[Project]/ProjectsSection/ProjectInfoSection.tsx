@@ -24,7 +24,7 @@ const ProjectInfoSection = ({
   title,
   year,
   info,
-  actions: { title: actionTitle, values },
+  actions,
   images,
 }: ProjectInfoProps) => (
   <section className={styles.wrapper}>
@@ -55,9 +55,9 @@ const ProjectInfoSection = ({
             ))}
         </div>
         <div style={{ textAlign: 'left' }}>
-          {actionTitle && <div className={styles.heading}>{actionTitle}</div>}
-          {values &&
-            Object.entries(values).map((entry, index) => (
+          {actions && <div className={styles.heading}>{actions.title}</div>}
+          {actions &&
+            Object.entries(actions.values).map((entry, index) => (
               <div key={`${entry}${index}`} className={styles.actionRow}>
                 <span className={styles.mainText}>{entry[0]}</span>
                 <span className={styles.mainText}>{entry[1]}</span>
