@@ -8,7 +8,7 @@ import { useSpring, animated, useChain, useSpringRef } from '@react-spring/web';
 import { useDebounce } from '@/hooks/useDebounce';
 
 interface ProjectCardProps {
-  id: string;
+  id?: string;
   title: string;
   index: number;
   subtitle: string;
