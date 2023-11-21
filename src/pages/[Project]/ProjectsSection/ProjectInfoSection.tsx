@@ -28,7 +28,7 @@ const ProjectInfoSection = ({
   images,
 }: ProjectInfoProps) => (
   <section className={styles.wrapper}>
-    <h2 className={styles.mainHeading}>{title}</h2>
+    {title && <h2 className={styles.mainHeading}>{title}</h2>}
     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
       <div
         style={{
@@ -39,66 +39,49 @@ const ProjectInfoSection = ({
         }}
       >
         <span className={styles.textDesc}>Year</span>
-        <span className={styles.textMain} style={{ opacity: 1 }}>
-          {year}
-        </span>
+        {year && (
+          <span className={styles.textMain} style={{ opacity: 1 }}>
+            {year}
+          </span>
+        )}
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '60px' }}>
         <div style={{ display: 'flex', gap: '24px' }}>
-          {info.map((paragraph, index) => (
-            <p key={index} className={styles.mainText}>
-              {paragraph}
-            </p>
-          ))}
+          {info &&
+            info.map((paragraph, index) => (
+              <p key={index} className={styles.mainText}>
+                {paragraph}
+              </p>
+            ))}
         </div>
         <div style={{ textAlign: 'left' }}>
-          <div className={styles.heading}>{actionTitle}</div>
-          {Object.entries(values).map((entry, index) => (
-            <div key={`${entry}${index}`} className={styles.actionRow}>
-              <span className={styles.mainText}>{entry[0]}</span>
-              <span className={styles.mainText}>{entry[1]}</span>
-            </div>
-          ))}
+          {actionTitle && <div className={styles.heading}>{actionTitle}</div>}
+          {values &&
+            Object.entries(values).map((entry, index) => (
+              <div key={`${entry}${index}`} className={styles.actionRow}>
+                <span className={styles.mainText}>{entry[0]}</span>
+                <span className={styles.mainText}>{entry[1]}</span>
+              </div>
+            ))}
         </div>
       </div>
     </div>
     <div className={styles.gallery}>
-      {images.map((row, index) => (
-        <div key={`row${index}`} style={{ display: 'flex', gap: '24px' }}>
-          {row.map(({ src, width, height }, index) => (
-            <Image
-              key={src + index}
-              src={src}
-              alt={`${title} image`}
-              width={width}
-              height={height}
-            />
-          ))}
-        </div>
-      ))}
+      {images &&
+        images.map((row, index) => (
+          <div key={`row${index}`} style={{ display: 'flex', gap: '24px' }}>
+            {row.map(({ src, width, height }, index) => (
+              <Image
+                key={src + index}
+                src={src}
+                alt={`${title} image`}
+                width={width}
+                height={height}
+              />
+            ))}
+          </div>
+        ))}
     </div>
-    <div className={styles.cardsWrapper}>
-      {/* {projectsSection.slice(0, displayPosts).map((project, index) => {
-        const cardIndex = index + 1;
-        return (
-          <ProjectCard
-            key={project.src + cardIndex}
-            {...project}
-            index={index}
-          />
-        );
-      })} */}
-    </div>
-    {/* <LinkButton href="/projects" size="l" style={{ margin: '0 auto' }}>
-        LOAD MORE PROJECTS
-      </LinkButton> */}
-    {/* <button
-      className={styles.button}
-      onClick={loadMore}
-      disabled={displayPosts >= projectsSection.length}
-    >
-      load more projects
-    </button> */}
   </section>
 );
 
