@@ -1,7 +1,5 @@
 .navbarList {
   display: flex;
-  width: 350px;
-  justify-content: center;
   gap: 16px;
 }
 
