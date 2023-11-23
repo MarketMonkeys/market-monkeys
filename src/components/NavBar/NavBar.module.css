@@ -1,7 +1,6 @@
 .navbarList {
   display: flex;
-  width: 350px;
-  justify-content: space-between;
+  gap: 16px;
 }
 
 .link {

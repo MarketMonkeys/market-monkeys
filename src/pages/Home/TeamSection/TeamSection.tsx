@@ -10,7 +10,7 @@ const TeamSection = () => {
         <Carousel />
         <div id="form" style={{ display: 'flex' }}>
           <Image
-            src="/images/digital-marketing-phone.svg"
+            src="/images/digital-marketing-phone_2.svg"
             alt="Digital Marketong Phone"
             draggable={false}
             width={320}

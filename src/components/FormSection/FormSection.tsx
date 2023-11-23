@@ -8,7 +8,7 @@ const FormSection = () => {
       <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ display: 'flex' }}>
           <Image
-            src="/images/digital-marketing-phone.svg"
+            src="/images/digital-marketing-phone_2.svg"
             alt="Digital Marketong Phone"
             draggable={false}
             width={320}

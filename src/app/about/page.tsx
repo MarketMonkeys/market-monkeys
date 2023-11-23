@@ -24,14 +24,14 @@ export default function About() {
         }}
       >
         <Image
-          src="/images/about-bg-1440.jpg"
+          src="/images/about-bg-1440.png"
           alt="About bg"
           className={styles.imgSmall}
           priority={true}
           fill={true}
         />
         <Image
-          src="/images/about-bg-1920_main.jpg"
+          src="/images/about-bg-1920_main.png"
           alt="About bg"
           className={styles.imgLarge}
           priority={true}

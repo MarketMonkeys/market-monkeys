@@ -4,6 +4,7 @@
 
 .imgSmall {
   object-fit: cover;
+  border-radius: 0 0 50px 50px;
 }
 
 .shadow {
@@ -47,5 +48,6 @@
   .imgLarge {
     display: block;
     object-fit: cover;
+    border-radius: 0 0 50px 50px;
   }
 }
