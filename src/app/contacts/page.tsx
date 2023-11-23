@@ -3,8 +3,10 @@ import styles from './page.module.css';
 import ScrollIcon from '@/components/Icons/ScrollIcon';
 import GetInTouchSection from '@/pages/Contacts/GetInTouchSection/GetInTouchSection';
 import FormSection from '@/components/FormSection/FormSection';
+import { redirect } from 'next/navigation';
 
 export default function Contacts() {
+  redirect('/');
   return (
     <section>
       <div

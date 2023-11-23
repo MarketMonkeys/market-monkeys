@@ -11,8 +11,8 @@ export const navigationLinks = [
     title: 'Services',
     link: '/services',
   },
-  {
-    title: 'Contacts',
-    link: '/contacts',
-  },
+  // {
+  //   title: 'Contacts',
+  //   link: '/contacts',
+  // },
 ];
