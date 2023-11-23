@@ -29,23 +29,16 @@ const ProjectsSection = () => {
       </div>
       <div className={styles.border}></div>
       <div className={styles.cardsWrapper}>
-        {projectsSection
-          .slice(0, displayPosts)
-          .map(({ title, subtitle, label, text, src, srcHover }, index) => {
-            const cardIndex = index + 1;
-            return (
-              <ProjectCard
-                key={src + cardIndex}
-                title={title}
-                index={cardIndex}
-                subtitle={subtitle}
-                text={text}
-                label={label}
-                src={src}
-                srcHover={srcHover}
-              />
-            );
-          })}
+        {projectsSection.slice(0, displayPosts).map((project, index) => {
+          const cardIndex = index + 1;
+          return (
+            <ProjectCard
+              key={project.src + cardIndex}
+              {...project}
+              index={index}
+            />
+          );
+        })}
       </div>
       {/* <LinkButton href="/projects" size="l" style={{ margin: '0 auto' }}>
         LOAD MORE PROJECTS

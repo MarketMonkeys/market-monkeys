@@ -8,6 +8,7 @@ import { useSpring, animated, useChain, useSpringRef } from '@react-spring/web';
 import { useDebounce } from '@/hooks/useDebounce';
 
 interface ProjectCardProps {
+  id?: string;
   title: string;
   index: number;
   subtitle: string;
@@ -18,6 +19,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
+  id,
   title,
   index,
   subtitle,
@@ -107,7 +109,7 @@ const ProjectCard = ({
           </div>
           <LinkButton
             variant="secondary"
-            href="/"
+            href={`/projects/${id}`}
             style={{ alignSelf: 'flex-end', height: 'fit-content' }}
           >
             Explore
