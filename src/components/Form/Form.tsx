@@ -6,8 +6,9 @@ import PhoneIcon from '@/components/Icons/PhoneIcon';
 import EmailIcon from '@/components/Icons/EmailIcon';
 import CommentIcon from '@/components/Icons/CommentIcon';
 import { SubmitHandler, useForm } from 'react-hook-form';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Modal from '../Modal/Modal';
 
 interface FormProps {
   name: string;
@@ -17,6 +18,8 @@ interface FormProps {
 }
 
 const Form = () => {
+  const [showModal, setShowModal] = useState<boolean>(false);
+
   const form = useRef<null | HTMLFormElement>(null);
   const {
     register,
@@ -44,6 +47,7 @@ const Form = () => {
 
   useEffect(() => {
     if (isSubmitSuccessful) {
+      setShowModal(true);
       reset();
     }
   }, [isSubmitSuccessful, reset]);
@@ -113,6 +117,15 @@ const Form = () => {
           data.
         </p>
       </form>
+      {showModal && (
+        <Modal
+          onClose={() => setShowModal(false)}
+          title="Your application was submitted successfully!"
+          description="We will contact you shortly to discuss all the details of the project."
+          buttonTitle="back to home page"
+          isOpen={showModal}
+        />
+      )}
     </div>
   );
 };
