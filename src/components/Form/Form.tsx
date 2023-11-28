@@ -117,15 +117,14 @@ const Form = () => {
           data.
         </p>
       </form>
-      {showModal && (
-        <Modal
-          onClose={() => setShowModal(false)}
-          title="Your application was submitted successfully!"
-          description="We will contact you shortly to discuss all the details of the project."
-          buttonTitle="back to home page"
-          isOpen={showModal}
-        />
-      )}
+
+      <Modal
+        showModal={setShowModal}
+        title="Your application was submitted successfully!"
+        description="We will contact you shortly to discuss all the details of the project."
+        buttonTitle="back to home page"
+        isOpen={showModal}
+      />
     </div>
   );
 };
