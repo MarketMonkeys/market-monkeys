@@ -35,7 +35,7 @@ const ProjectsSection = () => {
             <ProjectCard
               key={project.src + cardIndex}
               {...project}
-              index={index}
+              index={cardIndex}
             />
           );
         })}
