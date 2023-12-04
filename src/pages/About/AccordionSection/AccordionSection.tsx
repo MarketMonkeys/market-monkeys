@@ -9,7 +9,7 @@ const AccordionSection = () => {
           maxWidth: '1200px',
           width: '100%',
           margin: '0 auto',
-          padding: '120px 0',
+          padding: '150px 0',
         }}
       >
         <h2 className={styles.heading}>Frequently Asked Questions</h2>

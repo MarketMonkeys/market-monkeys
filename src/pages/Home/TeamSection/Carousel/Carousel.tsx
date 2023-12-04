@@ -32,7 +32,7 @@ const Carousel = () => {
   };
 
   return (
-    <div style={{ marginBottom: '120px' }}>
+    <div style={{ marginBottom: '150px' }}>
       <div
         style={{
           marginBottom: '80px',

@@ -24,7 +24,7 @@ const BlueBlockSection = ({ keyOutcomes }: BlueSectionProps) => {
             display: 'flex',
             flexWrap: 'wrap',
             gap: '24px',
-            marginBottom: '120px',
+            marginBottom: '150px',
           }}
         >
           {keyOutcomes &&
@@ -34,7 +34,7 @@ const BlueBlockSection = ({ keyOutcomes }: BlueSectionProps) => {
               </li>
             ))}
         </ul>
-        <div style={{ marginBottom: '120px' }}>
+        <div style={{ marginBottom: '150px' }}>
           <h2 className={styles.heading}>more projects</h2>
           <ProjectCard {...projectsSection[1]} index={1} />
         </div>
