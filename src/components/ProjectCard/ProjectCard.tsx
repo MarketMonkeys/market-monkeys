@@ -6,6 +6,7 @@ import LinkButton from '@/components/LinkButton/LinkButton';
 import Image from 'next/image';
 import { useSpring, animated, useChain, useSpringRef } from '@react-spring/web';
 import { useDebounce } from '@/hooks/useDebounce';
+import { usePathname } from 'next/navigation';
 
 interface ProjectCardProps {
   id?: string;
@@ -28,6 +29,10 @@ const ProjectCard = ({
   src,
   srcHover,
 }: ProjectCardProps) => {
+  const pathname = usePathname();
+  const isBlueBackgroundOnHover =
+    pathname?.startsWith('/projects/') && !!pathname.split('/')[2];
+
   const [isHover, setIsHover] = useState<boolean>(false);
   const THREE_HUNDRED_MS: number = 300;
   const debouncedValue = useDebounce<boolean>(isHover, THREE_HUNDRED_MS);
@@ -74,12 +79,14 @@ const ProjectCard = ({
 
   return (
     <div
-      className={styles.wrapper}
+      className={`${styles.wrapper} ${
+        isBlueBackgroundOnHover && styles.blueWrapper
+      }`}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
       <div
-        className={styles.cardWrapper}
+        className={`${styles.cardWrapper}`}
         style={
           isEvenIndex
             ? {

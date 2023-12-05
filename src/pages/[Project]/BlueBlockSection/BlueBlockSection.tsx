@@ -36,7 +36,7 @@ const BlueBlockSection = ({ keyOutcomes }: BlueSectionProps) => {
         </ul>
         <div style={{ marginBottom: '150px' }}>
           <h2 className={styles.heading}>more projects</h2>
-          <ProjectCard {...projectsSection[1]} index={1} />
+          <ProjectCard {...projectsSection[0]} index={1} />
         </div>
       </div>
       <FormSection />
