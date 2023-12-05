@@ -26,8 +26,9 @@ export default function About() {
           src="/images/about-bg.png"
           alt="About bg"
           className={styles.img}
-          priority={true}
+          priority
           fill
+          quality={100}
         />
       </div>
       <div className={styles.contentImgWrapper}>

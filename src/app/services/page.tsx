@@ -19,10 +19,11 @@ export default function Services() {
       >
         <Image
           src="/images/services-bg.png"
-          alt="Projects bg"
+          alt="Services bg"
           className={styles.img}
-          priority={true}
+          priority
           fill
+          quality={100}
         />
       </div>
       <div className={styles.contentImgWrapper}>

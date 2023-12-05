@@ -20,8 +20,9 @@ export default function Projects() {
           src="/images/projects-bg.png"
           alt="Projects bg"
           className={styles.img}
-          priority={true}
+          priority
           fill
+          quality={100}
         />
       </div>
       <div className={styles.contentImgWrapper}>

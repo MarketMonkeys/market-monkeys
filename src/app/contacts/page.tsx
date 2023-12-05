@@ -20,10 +20,11 @@ export default function Contacts() {
       >
         <Image
           src="/images/contacts-bg.png"
-          alt="Projects bg"
+          alt="Contacts bg"
           className={styles.img}
-          priority={true}
+          priority
           fill
+          quality={100}
         />
       </div>
       <div className={styles.contentImgWrapper}>
