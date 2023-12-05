@@ -10,20 +10,11 @@ export default function Home() {
     <main>
       <DigitalMarketingSection />
       <BlueSectionWrapper>
-        {/* <div
-        style={{
-          background: 'var(--blue)',
-          borderRadius: '50px',
-          padding: '120px',
-          position: 'relative',
-        }}
-      > */}
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <ServiceSpectrumSection />
           <AdvatagesSection />
         </div>
       </BlueSectionWrapper>
-      {/* </div> */}
       <ProjectPortfolioSection />
       <TeamSection />
     </main>

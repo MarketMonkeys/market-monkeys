@@ -17,18 +17,11 @@ export default function Projects() {
         }}
       >
         <Image
-          src="/images/projects-bg-1440.png"
+          src="/images/projects-bg.png"
           alt="Projects bg"
-          className={styles.imgSmall}
+          className={styles.img}
           priority={true}
-          fill={true}
-        />
-        <Image
-          src="/images/projects-bg-1920.png"
-          alt="Projects bg"
-          className={styles.imgLarge}
-          priority={true}
-          fill={true}
+          fill
         />
       </div>
       <div className={styles.contentImgWrapper}>
@@ -43,7 +36,7 @@ export default function Projects() {
         >
           <div
             style={{
-              bottom: '100px',
+              bottom: '40px',
               left: '120px',
               position: 'absolute',
               zIndex: 2,
@@ -58,7 +51,7 @@ export default function Projects() {
           </div>
           <div
             style={{
-              bottom: '90px',
+              bottom: '40px',
               right: '120px',
               position: 'absolute',
               display: 'flex',

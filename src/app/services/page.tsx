@@ -18,18 +18,11 @@ export default function Services() {
         }}
       >
         <Image
-          src="/images/services-bg-1440.png"
+          src="/images/services-bg.png"
           alt="Projects bg"
-          className={styles.imgSmall}
+          className={styles.img}
           priority={true}
-          fill={true}
-        />
-        <Image
-          src="/images/services-bg-1920.png"
-          alt="Projects bg"
-          className={styles.imgLarge}
-          priority={true}
-          fill={true}
+          fill
         />
       </div>
       <div className={styles.contentImgWrapper}>

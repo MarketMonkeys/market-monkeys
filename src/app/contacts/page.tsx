@@ -21,17 +21,10 @@ export default function Contacts() {
         <Image
           src="/images/contacts-bg.png"
           alt="Projects bg"
-          className={styles.imgSmall}
+          className={styles.img}
           priority={true}
-          fill={true}
+          fill
         />
-        {/* <Image
-          src="/images/services-bg-1920.png"
-          alt="Projects bg"
-          className={styles.imgLarge}
-          priority={true}
-          fill={true}
-        /> */}
       </div>
       <div className={styles.contentImgWrapper}>
         <div

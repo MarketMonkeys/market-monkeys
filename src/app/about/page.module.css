@@ -1,9 +1,6 @@
-.imgLarge {
-  display: none;
-}
-
-.imgSmall {
+.img {
   object-fit: cover;
+  object-position: top;
 }
 
 .shadow {
@@ -36,15 +33,4 @@
   font-style: normal;
   font-weight: var(--text-main-font-weight);
   line-height: 22px;
-}
-
-@media screen and (min-width: 1920px) {
-  .imgSmall {
-    display: none;
-  }
-
-  .imgLarge {
-    object-fit: cover;
-    display: block;
-  }
 }

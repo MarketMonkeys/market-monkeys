@@ -17,25 +17,17 @@ export default function About() {
         style={{
           width: '100%',
           height: '100vh',
-          // height: "770px",
           position: 'absolute',
           top: '0',
           left: '0',
         }}
       >
         <Image
-          src="/images/about-bg-1440.png"
+          src="/images/about-bg.png"
           alt="About bg"
-          className={styles.imgSmall}
+          className={styles.img}
           priority={true}
-          fill={true}
-        />
-        <Image
-          src="/images/about-bg-1920_main.png"
-          alt="About bg"
-          className={styles.imgLarge}
-          priority={true}
-          fill={true}
+          fill
         />
       </div>
       <div className={styles.contentImgWrapper}>

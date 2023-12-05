@@ -46,7 +46,6 @@ export default function Project({ params }: { params: { slug: string } }) {
         <Image
           src={mainImage}
           alt="Case bg"
-          className={styles.img}
           priority={true}
           width={734}
           height={560}
