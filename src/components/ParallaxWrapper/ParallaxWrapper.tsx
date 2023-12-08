@@ -2,7 +2,13 @@
 import { useScroll, animated } from '@react-spring/web';
 import React, { useEffect, useState } from 'react';
 
-const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
+const ParallaxWrapper = ({
+  children,
+  counter,
+}: {
+  children: React.ReactNode;
+  counter: number;
+}) => {
   const [windowHeight, setWindowHeight] = useState<number>(0);
   const { scrollY } = useScroll();
 
@@ -15,10 +21,12 @@ const ParallaxWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <animated.div
       style={{
-        // position: 'relative',
-        // zIndex: 60,
+        position: 'relative',
+        zIndex: 60,
         marginTop: scrollY.to((val) =>
-          val < windowHeight ? -val : -windowHeight
+          val < windowHeight * counter
+            ? -val / counter
+            : -windowHeight * counter
         ),
       }}
     >

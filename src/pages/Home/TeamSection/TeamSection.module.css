@@ -3,5 +3,5 @@
   padding: 150px 120px 0 120px;
   border-radius: 50px;
   color: var(--black);
-  overflow-x: hidden;
+  overflow: hidden;
 }

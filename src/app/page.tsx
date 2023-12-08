@@ -10,7 +10,7 @@ export default function Home() {
     <main>
       <DigitalMarketingSection />
       {/* <BlueSectionWrapper> */}
-      <ParallaxWrapper>
+      <ParallaxWrapper counter={1}>
         <div
           style={{
             position: 'relative',
