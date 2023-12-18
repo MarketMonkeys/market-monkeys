@@ -1,44 +1,64 @@
 'use client';
 import styles from './DigitalMarketingSection.module.css';
 import { wordGroups } from '@/common/mocks/home';
-import { animated } from '@react-spring/web';
+import { animated, useSpring } from '@react-spring/web';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
-// const getRandomDelay = () => Math.random() * 2000;
+// const getRandomDelay = () => Math.random() * 1500;
 
 const DigitalMarketingSection = () => {
-  // const props = useSpring({
-  //   from: { scale: 1 },
-  //   to: [{ scale: 1.1 }, { scale: 1 }],
-  //   loop: true,
-  //   delay: getRandomDelay(),
-  //   config: {
-  //     mass: 2,
-  //     tension: 220,
-  //   },
-  // });
+  const [currentRow, setCurrentRow] = useState(0);
+  const [currentWord, setCurrentWord] = useState(0);
+  const [hover, setHover] = useState(false);
+
+  const springs = useSpring({
+    from: { scale: 1, filter: 'brightness(100%)' },
+    to: [{ scale: 1.1 }, { scale: 1 }],
+    cancel: hover,
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const rowIndex = Math.floor(Math.random() * wordGroups.length);
+      setCurrentRow(rowIndex);
+
+      const rowLength = wordGroups[rowIndex]?.words
+        .split('#')
+        .map((word) => word).length;
+      setCurrentWord(Math.floor(Math.random() * rowLength));
+    }, 1200);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section style={{ position: 'relative', height: 'calc(100vh - 150px)' }}>
-      <ul style={{ padding: '20px 0 40px', overflowX: 'hidden' }}>
+      <ul
+        style={{ padding: '20px 0 40px', overflowX: 'hidden' }}
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+      >
         {wordGroups.map((group, groupIndex) => (
           <li
             key={groupIndex}
             style={{ textAlign: 'center', whiteSpace: 'nowrap' }}
           >
             {group.words.split('#').map((word, wordIndex) => (
-              // {wordsSprings.map(({ scale }, wordIndex) => (
-              <animated.span
-                key={wordIndex}
+              <animated.div
                 className={`${styles.word} ${styles[group.colors[wordIndex]]}`}
-                // style={props}
+                key={wordIndex}
                 style={{
-                  // ...props,
                   color: `var(--${group.colors[wordIndex]})`,
+                  ...(groupIndex === currentRow &&
+                  wordIndex === currentWord &&
+                  !hover
+                    ? springs
+                    : {}),
                 }}
               >
                 {word}
-              </animated.span>
+              </animated.div>
             ))}
           </li>
         ))}
