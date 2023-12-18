@@ -1,22 +1,22 @@
 'use client';
 import styles from './DigitalMarketingSection.module.css';
 import { wordGroups } from '@/common/mocks/home';
-import { useSpring, animated } from '@react-spring/web';
+import { animated } from '@react-spring/web';
 import Image from 'next/image';
 
-const getRandomDelay = () => Math.random() * 2000; // Генерує випадкову затримку до 2000 мс
+// const getRandomDelay = () => Math.random() * 2000;
 
 const DigitalMarketingSection = () => {
-  const props = useSpring({
-    from: { scale: 1 },
-    to: [{ scale: 1.1 }, { scale: 1 }],
-    loop: true,
-    delay: getRandomDelay(),
-    config: {
-      mass: 2,
-      tension: 220,
-    },
-  });
+  // const props = useSpring({
+  //   from: { scale: 1 },
+  //   to: [{ scale: 1.1 }, { scale: 1 }],
+  //   loop: true,
+  //   delay: getRandomDelay(),
+  //   config: {
+  //     mass: 2,
+  //     tension: 220,
+  //   },
+  // });
 
   return (
     <section style={{ position: 'relative', height: 'calc(100vh - 150px)' }}>
@@ -33,7 +33,7 @@ const DigitalMarketingSection = () => {
                 className={`${styles.word} ${styles[group.colors[wordIndex]]}`}
                 // style={props}
                 style={{
-                  ...props,
+                  // ...props,
                   color: `var(--${group.colors[wordIndex]})`,
                 }}
               >

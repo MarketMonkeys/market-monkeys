@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <main>
       <DigitalMarketingSection />
-      {/* <BlueSectionWrapper> */}
       <ParallaxWrapper counter={1}>
         <div
           style={{
@@ -25,7 +24,6 @@ export default function Home() {
           </div>
         </div>
       </ParallaxWrapper>
-      {/* </BlueSectionWrapper> */}
       <ProjectPortfolioSection />
       <TeamSection />
     </main>
