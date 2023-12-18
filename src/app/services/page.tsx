@@ -3,7 +3,6 @@ import styles from './page.module.css';
 import ScrollIcon from '@/components/Icons/ScrollIcon';
 import MarketingSolutionsSection from '@/pages/Services/MarketingSolutionsSection/MarketingSolutionsSection';
 import WorkflowStagesSection from '@/pages/Services/WorkflowStagesSection/WorkflowStagesSection';
-import ParallaxWrapper from '@/components/ParallaxWrapper/ParallaxWrapper';
 
 export default function Services() {
   return (
@@ -78,9 +77,9 @@ export default function Services() {
         ></div>
       </div>
       <MarketingSolutionsSection />
-      <ParallaxWrapper counter={12}>
-        <WorkflowStagesSection />
-      </ParallaxWrapper>
+      {/* <ParallaxWrapper counter={3}> */}
+      <WorkflowStagesSection />
+      {/* </ParallaxWrapper> */}
     </section>
   );
 }
