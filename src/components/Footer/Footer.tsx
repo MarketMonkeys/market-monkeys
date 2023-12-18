@@ -55,7 +55,7 @@ const Footer = () => {
             style={{
               display: 'flex',
               flexDirection: 'column',
-              // justifyContent: 'space-between',
+              justifyContent: 'space-between',
               paddingTop: '20px',
             }}
           >
@@ -63,7 +63,7 @@ const Footer = () => {
               <NavBar />
             </div>
 
-            <div style={{ marginTop: '80px' }}>
+            <div>
               <h5 className={styles.socialTitle}>We in Social Media</h5>
               <div
                 style={{
@@ -77,6 +77,18 @@ const Footer = () => {
                 <SocialMediaButton Icon={FacebookIcon} />
                 <SocialMediaButton Icon={LinkedinIcon} />
               </div>
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '8px',
+              }}
+            >
+              <span className={styles.info}>Powered By </span>
+              <Link href={'https://www.redrocket.software/'} target="_blank">
+                <span className={styles.info}>Red Rocket Software</span>
+              </Link>
             </div>
           </div>
           <div
