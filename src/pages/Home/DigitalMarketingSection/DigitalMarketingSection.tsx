@@ -1,8 +1,25 @@
+'use client';
 import styles from './DigitalMarketingSection.module.css';
 import { wordGroups } from '@/common/mocks/home';
+import { useSpring, useTrail, animated, useSprings } from '@react-spring/web';
 import Image from 'next/image';
+import { useState } from 'react';
+
+const getRandomDelay = () => Math.random() * 2000; // Генерує випадкову затримку до 2000 мс
 
 const DigitalMarketingSection = () => {
+  const props = useSpring({
+    from: { scale: 1 },
+    to: [{ scale: 1.1 }, { scale: 1 }],
+    // config: { duration: 1000000 },
+    loop: true,
+    delay: getRandomDelay(),
+    config: {
+      mass: 2,
+      tension: 220,
+    },
+  });
+
   return (
     <section style={{ position: 'relative', height: 'calc(100vh - 150px)' }}>
       <ul style={{ padding: '20px 0 40px', overflowX: 'hidden' }}>
@@ -12,13 +29,18 @@ const DigitalMarketingSection = () => {
             style={{ textAlign: 'center', whiteSpace: 'nowrap' }}
           >
             {group.words.split('#').map((word, wordIndex) => (
-              <span
+              // {wordsSprings.map(({ scale }, wordIndex) => (
+              <animated.span
                 key={wordIndex}
                 className={`${styles.word} ${styles[group.colors[wordIndex]]}`}
-                style={{ color: `var(--${group.colors[wordIndex]})` }}
+                // style={props}
+                style={{
+                  ...props,
+                  color: `var(--${group.colors[wordIndex]})`,
+                }}
               >
                 {word}
-              </span>
+              </animated.span>
             ))}
           </li>
         ))}

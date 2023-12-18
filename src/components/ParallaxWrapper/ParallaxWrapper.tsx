@@ -23,11 +23,12 @@ const ParallaxWrapper = ({
       style={{
         position: 'relative',
         zIndex: 60,
-        marginTop: scrollY.to((val) =>
-          val < windowHeight * counter
-            ? -val / counter
-            : -windowHeight * counter
-        ),
+        marginTop: scrollY.to((val) => {
+          console.log(val);
+          return val < windowHeight / counter
+            ? -val * counter
+            : -windowHeight * counter;
+        }),
       }}
     >
       {children}
