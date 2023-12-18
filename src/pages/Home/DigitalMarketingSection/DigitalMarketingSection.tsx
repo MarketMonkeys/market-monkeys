@@ -1,9 +1,8 @@
 'use client';
 import styles from './DigitalMarketingSection.module.css';
 import { wordGroups } from '@/common/mocks/home';
-import { useSpring, useTrail, animated, useSprings } from '@react-spring/web';
+import { useSpring, animated } from '@react-spring/web';
 import Image from 'next/image';
-import { useState } from 'react';
 
 const getRandomDelay = () => Math.random() * 2000; // Генерує випадкову затримку до 2000 мс
 
@@ -11,7 +10,6 @@ const DigitalMarketingSection = () => {
   const props = useSpring({
     from: { scale: 1 },
     to: [{ scale: 1.1 }, { scale: 1 }],
-    // config: { duration: 1000000 },
     loop: true,
     delay: getRandomDelay(),
     config: {
