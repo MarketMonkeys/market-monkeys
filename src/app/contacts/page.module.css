@@ -1,8 +1,4 @@
-/* .imgLarge {
-  display: none;
-} */
-
-.imgSmall {
+.img {
   object-fit: cover;
   border-radius: 0px 0px 50px 50px;
 }
@@ -41,14 +37,3 @@
   font-weight: var(--text-main-font-weight);
   line-height: 22px;
 }
-
-/* @media screen and (min-width: 1920px) {
-  .imgSmall {
-    display: none;
-  }
-
-  .imgLarge {
-    display: block;
-    object-fit: cover;
-  }
-} */

@@ -46,10 +46,10 @@ export default function Project({ params }: { params: { slug: string } }) {
         <Image
           src={mainImage}
           alt="Case bg"
-          className={styles.img}
-          priority={true}
+          priority
           width={734}
           height={560}
+          quality={100}
         />
       </div>
       <div className={styles.contentImgWrapper}>

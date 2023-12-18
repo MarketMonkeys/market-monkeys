@@ -6,6 +6,7 @@ import LinkButton from '@/components/LinkButton/LinkButton';
 import Image from 'next/image';
 import { useSpring, animated, useChain, useSpringRef } from '@react-spring/web';
 import { useDebounce } from '@/hooks/useDebounce';
+import { usePathname } from 'next/navigation';
 
 interface ProjectCardProps {
   id?: string;
@@ -28,39 +29,43 @@ const ProjectCard = ({
   src,
   srcHover,
 }: ProjectCardProps) => {
+  const pathname = usePathname();
+  const isBlueBackgroundOnHover =
+    pathname?.startsWith('/projects/') && !!pathname.split('/')[2];
+
   const [isHover, setIsHover] = useState<boolean>(false);
-  const FIVE_HUNDRED_MS: number = 500;
-  const debouncedValue = useDebounce<boolean>(isHover, FIVE_HUNDRED_MS);
+  const THREE_HUNDRED_MS: number = 300;
+  const debouncedValue = useDebounce<boolean>(isHover, THREE_HUNDRED_MS);
   const isEvenIndex = index % 2 === 0;
 
   const springRef = useSpringRef();
   const springs = useSpring({
     ref: springRef,
     x: debouncedValue ? (isEvenIndex ? -1000 : 1000) : 0,
-    delay: debouncedValue ? 100 : FIVE_HUNDRED_MS,
-    config: { duration: FIVE_HUNDRED_MS },
+    delay: debouncedValue ? 100 : THREE_HUNDRED_MS,
+    config: { duration: THREE_HUNDRED_MS },
   });
   const springScaleRef = useSpringRef();
   const springsScale = useSpring({
     ref: springScaleRef,
     scale: debouncedValue ? 0.8 : 1,
-    delay: debouncedValue ? 0 : FIVE_HUNDRED_MS,
-    config: { duration: 200 },
+    delay: debouncedValue ? 0 : THREE_HUNDRED_MS,
+    config: { duration: 100 },
   });
 
   const hoverSpringRef = useSpringRef();
   const hoverSprings = useSpring({
     ref: hoverSpringRef,
     x: debouncedValue ? 0 : isEvenIndex ? -1000 : 1000,
-    delay: debouncedValue ? FIVE_HUNDRED_MS : 100,
-    config: { duration: FIVE_HUNDRED_MS },
+    delay: debouncedValue ? THREE_HUNDRED_MS : 100,
+    config: { duration: THREE_HUNDRED_MS },
   });
   const hoverSpringScaleRef = useSpringRef();
   const hoverSpringsScale = useSpring({
     ref: hoverSpringScaleRef,
     scale: debouncedValue ? 1 : 0.8,
-    delay: debouncedValue ? FIVE_HUNDRED_MS : 0,
-    config: { duration: 200 },
+    delay: debouncedValue ? THREE_HUNDRED_MS : 0,
+    config: { duration: 100 },
   });
 
   useChain(
@@ -74,12 +79,14 @@ const ProjectCard = ({
 
   return (
     <div
-      className={styles.wrapper}
+      className={`${styles.wrapper} ${
+        isBlueBackgroundOnHover && styles.blueWrapper
+      }`}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
       <div
-        className={styles.cardWrapper}
+        className={`${styles.cardWrapper}`}
         style={
           isEvenIndex
             ? {

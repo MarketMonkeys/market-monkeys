@@ -7,7 +7,7 @@
   transition: all 0.5s;
 }
 
-.wrapper:nth-child(2n) {
+.wrapper:nth-of-type(2n) {
   flex-direction: row-reverse;
 }
 
@@ -43,6 +43,7 @@
 .descriptionBlock {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
 }
 
@@ -99,6 +100,11 @@
 .wrapper:hover .cardWrapper {
   background: #202020;
   border: initial;
+}
+
+.blueWrapper:hover,
+.blueWrapper:hover .cardWrapper {
+  background: rgba(252, 252, 252, 0.1);
 }
 
 .wrapper:hover .imgWrapper {

@@ -17,7 +17,7 @@ const BlueSectionWrapper = ({ children }: { children: React.ReactNode }) => {
       style={{
         background: 'var(--blue)',
         borderRadius: '50px',
-        padding: '120px',
+        padding: '150px 120px 120px',
         position: 'relative',
         zIndex: 60,
         marginTop: scrollY.to((val) =>
