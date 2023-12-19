@@ -24,7 +24,6 @@ const ParallaxWrapper = ({
         position: 'relative',
         zIndex: 60,
         marginTop: scrollY.to((val) => {
-          console.log(val);
           return val < windowHeight / counter
             ? -val * counter
             : -windowHeight * counter;
