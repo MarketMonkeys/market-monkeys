@@ -53,3 +53,7 @@
   margin-left: 20px;
   text-align: right;
 }
+
+a .info:hover {
+  opacity: 1;
+}

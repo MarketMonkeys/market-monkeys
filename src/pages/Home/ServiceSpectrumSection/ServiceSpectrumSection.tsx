@@ -21,7 +21,7 @@ const ServiceSpectrumSection = () => {
   };
 
   return (
-    <section style={{ marginBottom: '120px' }}>
+    <section style={{ marginBottom: '150px' }}>
       <h2 className={styles.heading}>Service Spectrum</h2>
       <div className={styles.serviceBlock}>
         <Image

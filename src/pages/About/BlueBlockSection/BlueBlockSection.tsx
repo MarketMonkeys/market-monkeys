@@ -13,8 +13,14 @@ const BlueBlockSection = () => {
           landscape.
         </p>
         <div className={styles.line} />
-        {/* Change position in the future */}
-        <div style={{ display: 'flex', gap: '24px', marginBottom: '120px' }}>
+        <div
+          style={{
+            display: 'flex',
+            gap: '24px',
+            marginBottom: '120px',
+            justifyContent: 'flex-end',
+          }}
+        >
           <div style={{ maxWidth: '384px' }}>
             <p className={styles.smallCardTitle}>What Do We Do</p>
             <p className={styles.smallCardText}>
