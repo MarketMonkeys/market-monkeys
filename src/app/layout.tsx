@@ -7,7 +7,7 @@ import Footer from '@/components/Footer/Footer';
 const mulish = Mulish({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Home',
+  title: 'Digital Agency',
   description: 'Digital Marketing',
 };
 
